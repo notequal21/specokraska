@@ -164,6 +164,14 @@
           }
         }
 
+        .just-validate-error-field {
+          border-color: rgb(184, 17, 17);
+        }
+
+        .just-validate-error-label {
+          display: none;
+        }
+
         input {
           padding: 14px 16px;
           display: block;

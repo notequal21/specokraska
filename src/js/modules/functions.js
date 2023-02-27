@@ -1,5 +1,7 @@
 import { ItcCustomSelect } from './itc-select.js'
 import Swiper, { Pagination, Autoplay, Navigation } from 'swiper'
+import JustValidate from 'just-validate'
+import Inputmask from '../../../node_modules/inputmask/dist/inputmask.es6.js'
 
 export function isWebp() {
   function testWebP(callback) {
@@ -697,5 +699,130 @@ export const moreMobile = () => {
     catalogBtnBack.forEach((item) =>
       item.addEventListener('click', backCatalogContent)
     )
+  }
+}
+
+export const maskPhoneNumber = () => {
+  if (document.querySelector('._phone-mask')) {
+    const selector = document.querySelectorAll('._phone-mask')
+    Inputmask({ mask: '+7 (999) 999-99-99' }).mask(selector)
+  }
+}
+
+export const validateModalRegistr = () => {
+  if (document.querySelector('._modal-registration')) {
+    const validateCallback = new JustValidate('._modal-registration')
+    validateCallback
+      .addField('._input-email', [
+        {
+          rule: 'email',
+          value: true,
+          errorMessage: '',
+        },
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .addField('._input-password', [
+        {
+          rule: 'required',
+          errorMessage: '',
+        },
+      ])
+      .onSuccess((event) => {
+        let formData = new FormData(event.target)
+
+        let xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Mail send')
+            }
+          }
+        }
+
+        // xhr.open('POST', 'mail.php', true)
+        xhr.send(formData)
+
+        event.target.reset()
+      })
+  }
+}
+
+export const validateModalLogin = () => {
+  if (document.querySelector('._modal-login')) {
+    const validateCallback = new JustValidate('._modal-login')
+    validateCallback
+      .addField('._input-email', [
+        {
+          rule: 'email',
+          value: true,
+          errorMessage: '',
+        },
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .addField('._input-password', [
+        {
+          rule: 'required',
+          errorMessage: '',
+        },
+      ])
+      .onSuccess((event) => {
+        let formData = new FormData(event.target)
+
+        let xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Mail send')
+            }
+          }
+        }
+
+        // xhr.open('POST', 'mail.php', true)
+        xhr.send(formData)
+
+        event.target.reset()
+      })
+  }
+}
+
+export const validateModalForgot = () => {
+  if (document.querySelector('._modal-forgot')) {
+    const validateCallback = new JustValidate('._modal-forgot')
+    validateCallback
+      .addField('._input-email', [
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .onSuccess((event) => {
+        let formData = new FormData(event.target)
+
+        let xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Mail send')
+            }
+          }
+        }
+
+        // xhr.open('POST', 'mail.php', true)
+        xhr.send(formData)
+
+        event.target.reset()
+      })
   }
 }
