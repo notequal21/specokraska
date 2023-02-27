@@ -1,0 +1,106 @@
+// -------- imports --------
+@import 'fonts';
+@import 'components/_fonts';
+@import 'components/_itc-select.scss';
+@import 'components/_normalize.scss';
+@import 'components/_mixins.scss';
+@import 'components/_variables.scss';
+@import 'components/_variables.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_ui.scss';
+@import 'components/modals/modal.scss';
+@import 'components/modals/_call.scss';
+@import 'pages/index/_main.scss';
+@import 'pages/index/_popular.scss';
+@import 'pages/index/_goods.scss';
+@import 'pages/index/_videos.scss';
+
+@import './node_modules/swiper/swiper.scss';
+@import './node_modules/swiper/modules/pagination/pagination.scss';
+@import './node_modules/swiper/modules/navigation/navigation.scss';
+
+::selection {
+}
+
+body {
+  font-family: 'Futura PT', Arial, Helvetica, sans-serif;
+  color: #000000;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+
+  &_lg {
+    max-width: 1488px;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  // overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+}
+
+._sitemap {
+  height: 100vh;
+  padding: 50px 0;
+  background-color: rgb(58, 58, 58);
+
+  &-con {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0 50px;
+    }
+  }
+  &-body {
+    ol {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        &:not(:first-child) {
+          margin: 15px 0 0;
+        }
+      }
+    }
+
+    &__item {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: rgb(179, 203, 255);
+      }
+    }
+  }
+}

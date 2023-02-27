@@ -1,0 +1,136 @@
+.popular {
+  margin: 56px 0 0;
+
+  @media (max-width: 1200px) {
+    margin: 36px 0 0;
+    background: #f5f5f5;
+  }
+
+  &-con {
+    padding: 64px 60px;
+    background: #f5f5f5;
+    border-radius: 5px;
+
+    h4 {
+      font-weight: 550;
+      letter-spacing: -0.4px;
+
+      @media (max-width: 991px) {
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      padding: 24px 0;
+    }
+  }
+
+  &-body {
+    display: flex;
+    margin: 90px 0 0;
+
+    @media (max-width: 991px) {
+      margin: 60px 0 0;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 425px;
+      position: relative;
+      height: 200px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03),
+        0px 5px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      padding: 32px;
+      transition: all 0.3s ease;
+
+      @media (max-width: 1400px) {
+        padding: 21px 24px;
+      }
+
+      @media (max-width: 1200px) {
+        height: 140px;
+      }
+
+      @media (max-width: 991px) {
+        flex: 1 1 100%;
+        width: 181px;
+
+        &:nth-child(1) {
+          order: 3;
+          margin: 70px 0 0;
+        }
+        &:nth-child(2) {
+          order: 1;
+          margin: 0 !important;
+        }
+        &:nth-child(3) {
+          order: 2;
+        }
+      }
+
+      &:hover {
+        background: linear-gradient(258.51deg, #ffbc4b 61.25%, #ffd998 100.88%);
+        box-shadow: 0px 20px 24px -4px rgba(250, 166, 26, 0.25),
+          0px 8px 8px -4px rgba(250, 166, 26, 0.2);
+
+        img {
+          transform: 0;
+        }
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 14px;
+
+        @media (max-width: 991px) {
+          margin: 70px 0 0;
+        }
+      }
+
+      h5 {
+        margin: auto 0 0;
+        font-weight: 500;
+        // letter-spacing: -0.5px;
+
+        br {
+          &._mobile {
+            @media (min-width: 992px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      img {
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 290px;
+        object-fit: contain;
+        transition: all 0.3s ease;
+
+        @media (max-width: 1500px) {
+          width: 260px;
+        }
+        @media (max-width: 1400px) {
+          width: 200px;
+        }
+        @media (max-width: 1200px) {
+          width: 140px;
+        }
+        @media (max-width: 1100px) {
+          width: 100px;
+        }
+        @media (max-width: 991px) {
+          width: 196px;
+        }
+      }
+    }
+  }
+}
