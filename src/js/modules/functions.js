@@ -826,3 +826,42 @@ export const validateModalForgot = () => {
       })
   }
 }
+
+export const validateModalCall = () => {
+  if (document.querySelector('._modal-call')) {
+    const validateCallback = new JustValidate('._modal-call')
+    validateCallback
+      .addField('._input-name', [
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .addField('._input-phone', [
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .onSuccess((event) => {
+        let formData = new FormData(event.target)
+
+        let xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Mail send')
+            }
+          }
+        }
+
+        // xhr.open('POST', 'mail.php', true)
+        xhr.send(formData)
+
+        event.target.reset()
+      })
+  }
+}
