@@ -1,0 +1,122 @@
+.main-text {
+  margin: 64px 0 0;
+
+  @media (max-width: 991px) {
+    h3 {
+      font-size: 17px;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin: 30px 0 0;
+  }
+
+  &__body {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 21px;
+    color: #231f20;
+
+    @media (max-width: 767px) {
+      flex: 1 1 100%;
+    }
+
+    p {
+      margin: 24px 0 0;
+    }
+
+    ul {
+      margin: 24px 0 0;
+
+      li {
+        position: relative;
+        padding: 0 0 0 20px;
+        &::before {
+          content: '';
+          display: block;
+          width: 5px;
+          height: 5px;
+          background-color: #231f20;
+          border-radius: 50%;
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
+      }
+    }
+  }
+
+  &__news {
+    flex: 0 0 424px;
+    margin: 0 0 0 24px;
+
+    @media (max-width: 1200px) {
+      flex: 0 0 300px;
+    }
+
+    @media (max-width: 991px) {
+      flex: 0 0 270px;
+    }
+
+    @media (max-width: 767px) {
+      flex: 1 1 100%;
+      margin: 24px 0 0;
+    }
+
+    &-content {
+      margin: 24px 0 0;
+      @media (max-width: 767px) {
+      }
+    }
+
+    &-item {
+      display: block;
+
+      &:not(:first-child) {
+        margin: 24px 0 0;
+      }
+    }
+
+    &-date {
+      font-size: 16px;
+      line-height: 21px;
+      color: #919191;
+
+      @media (max-width: 991px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &-title {
+      margin: 10px 0 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #faa61a;
+      @media (max-width: 991px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &-text {
+      margin: 10px 0 0;
+      font-size: 16px;
+      line-height: 21px;
+      color: #231f20;
+      @media (max-width: 991px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
