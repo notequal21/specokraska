@@ -230,9 +230,10 @@ export const mainSlider = () => {
     modules: [Pagination, Navigation, Autoplay],
     slidesPerView: 1,
     spaceBetween: 8,
+    speed: 1000,
 
     autoplay: {
-      delay: 7000,
+      delay: 10000,
     },
 
     pagination: {
@@ -863,5 +864,80 @@ export const validateModalCall = () => {
 
         event.target.reset()
       })
+  }
+}
+
+export const youtubeModal = () => {
+  if (document.querySelector('._yt-modal')) {
+    const openBtn = document.querySelectorAll('._yt-modal-open-btn')
+    const modal = document.querySelector('._yt-modal')
+    const modalBg = document.querySelector('._yt-modal__bg')
+    const closeBtn = document.querySelectorAll('.yt-modal__content-close')
+    const body = document.querySelector('body')
+    const content = document.querySelectorAll('.container')
+
+    let toggleModal = (videoId) => {
+      let div = document.createElement('div')
+      div.style.overflowY = 'scroll'
+      div.style.width = '50px'
+      div.style.height = '50px'
+      document.body.append(div)
+      let scrollWidth = div.offsetWidth - div.clientWidth
+
+      div.remove()
+
+      let iframeVideo = document.createElement('iframe')
+
+      iframeVideo.src = `https://www.youtube.com/embed/${videoId}`
+      iframeVideo.classList = `_iframe-yt-video`
+      iframeVideo.title = 'YouTube video player'
+      iframeVideo.allow =
+        'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+      iframeVideo.allowFullscreen
+
+      if (modal.classList.contains('_active')) {
+        modal.classList.remove('_active')
+        body.classList.remove('_lock')
+
+        document.querySelector('._iframe-yt-video').remove()
+
+        if (window.innerWidth > 992) {
+          content.forEach((item) => {
+            if (item.classList.contains('container_lg')) {
+              item.style.maxWidth = `1472px`
+              item.style.padding = ` 0 24px`
+            } else {
+              item.style.maxWidth = `1368px`
+              item.style.padding = ` 0 24px`
+            }
+          })
+        }
+      } else {
+        modal.classList.add('_active')
+        body.classList.add('_lock')
+
+        document.querySelector('.yt-modal__content').append(iframeVideo)
+
+        if (window.innerWidth > 992) {
+          content.forEach((item) => {
+            if (item.classList.contains('container_lg')) {
+              item.style.maxWidth = `${1472 + scrollWidth}px`
+              item.style.padding = ` 0 ${scrollWidth + 24}px 0 24px`
+            } else {
+              item.style.maxWidth = `${1368 + scrollWidth}px`
+              item.style.padding = ` 0 ${scrollWidth + 24}px 0 24px`
+            }
+          })
+        }
+      }
+    }
+
+    openBtn.forEach((item) => {
+      item.addEventListener('click', () => toggleModal(item.dataset.videoid))
+    })
+    modalBg.addEventListener('click', toggleModal)
+    closeBtn.forEach((item) => {
+      item.addEventListener('click', toggleModal)
+    })
   }
 }

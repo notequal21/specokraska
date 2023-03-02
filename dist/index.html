@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230302131103">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230302231232">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>name</title>
 </head>
@@ -207,22 +207,51 @@
 <div class="header-menu__con">
 	<div class="container container_lg">
 		<div class="header-menu">
-			<a href="" class="header-menu__item">
+			<div class="header-menu__item">
 				<div class="header-menu__item-menu">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-
+				<div class="_dropdown">
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+				</div>
 				Каталог
-			</a>
+			</div>
 			<a href="" class="header-menu__item">О компании</a>
 			<a href="" class="header-menu__item">Новости</a>
 			<a href="" class="header-menu__item">Акции</a>
 			<a href="" class="header-menu__item">Статьи</a>
 			<a href="" class="header-menu__item">Доставка и оплата</a>
 			<a href="" class="header-menu__item">YouTube канал</a>
-			<a href="" class="header-menu__item">Контакты</a>
+			<div class="header-menu__item">
+				<div class="_dropdown">
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+					<a href="" class="_dropdown__item">
+						Оборудование
+					</a>
+				</div>
+				Контакты
+			</div>
 		</div>
 	</div>
 </div>
@@ -811,6 +840,21 @@
   </div>
   <div class="modal__bg _modal-forgot__bg"></div>
 </div>
+      <div class="modal _yt-modal">
+  <div class="modal__bg _yt-modal__bg"></div>
+
+  <div class="modal-body yt-modal__content">
+
+    <div class="yt-modal__content-close">
+      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 3L21.5 21M21.5 3L3.5 21" stroke="#BABABA" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- <iframe src="https://www.youtube.com/embed/iT6P2ajyf2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
       <main class="main">
   <div class="container">
@@ -3281,7 +3325,7 @@
         <div class="videos-body__item-preview">
           <img src="./img/main/videos/img.jpg" srcset="./img/main/videos/img.jpg 1x, ./img/main/videos/img@2x.jpg 2x"
             alt="">
-          <div class="videos-body__item-play">
+          <div data-videoId="raa9kzScUIA" class="videos-body__item-play _yt-modal-open-btn">
             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.568 13.8941C30.8107 14.6078 30.8107 16.3922 29.568 17.1059L9.29611 28.7488C8.0534 29.4625 6.5 28.5704 6.5 27.1429L6.5 3.85712C6.5 2.42964 8.0534 1.53746 9.29612 2.2512L29.568 13.8941Z"
@@ -3297,7 +3341,7 @@
         <div class="videos-body__item-preview">
           <img src="./img/main/videos/img.jpg" srcset="./img/main/videos/img.jpg 1x, ./img/main/videos/img@2x.jpg 2x"
             alt="">
-          <div class="videos-body__item-play">
+          <div data-videoId="raa9kzScUIA" class="videos-body__item-play _yt-modal-open-btn">
             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.568 13.8941C30.8107 14.6078 30.8107 16.3922 29.568 17.1059L9.29611 28.7488C8.0534 29.4625 6.5 28.5704 6.5 27.1429L6.5 3.85712C6.5 2.42964 8.0534 1.53746 9.29612 2.2512L29.568 13.8941Z"
@@ -3313,7 +3357,7 @@
         <div class="videos-body__item-preview">
           <img src="./img/main/videos/img.jpg" srcset="./img/main/videos/img.jpg 1x, ./img/main/videos/img@2x.jpg 2x"
             alt="">
-          <div class="videos-body__item-play">
+          <div data-videoId="raa9kzScUIA" class="videos-body__item-play _yt-modal-open-btn">
             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.568 13.8941C30.8107 14.6078 30.8107 16.3922 29.568 17.1059L9.29611 28.7488C8.0534 29.4625 6.5 28.5704 6.5 27.1429L6.5 3.85712C6.5 2.42964 8.0534 1.53746 9.29612 2.2512L29.568 13.8941Z"
@@ -3329,7 +3373,7 @@
         <div class="videos-body__item-preview">
           <img src="./img/main/videos/img.jpg" srcset="./img/main/videos/img.jpg 1x, ./img/main/videos/img@2x.jpg 2x"
             alt="">
-          <div class="videos-body__item-play">
+          <div data-videoId="raa9kzScUIA" class="videos-body__item-play _yt-modal-open-btn">
             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.568 13.8941C30.8107 14.6078 30.8107 16.3922 29.568 17.1059L9.29611 28.7488C8.0534 29.4625 6.5 28.5704 6.5 27.1429L6.5 3.85712C6.5 2.42964 8.0534 1.53746 9.29612 2.2512L29.568 13.8941Z"
@@ -3618,8 +3662,8 @@
 </footer>
   </div>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20230302131103" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-<script src="js/app.min.js?_v=20230302131103"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20230302231232" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+<script src="js/app.min.js?_v=20230302231232"></script>
 
 </body>
 
