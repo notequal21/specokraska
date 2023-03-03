@@ -2081,16 +2081,8 @@ p._sm {
 }
 
 .videos-body {
-  display: flex;
   margin: 32px 0 0;
-}
-
-.videos-body__item {
-  flex: 0 0 calc(25% - 18px);
-}
-
-.videos-body__item:not(:first-child) {
-  margin: 0 0 0 24px;
+  overflow: hidden;
 }
 
 .videos-body__item-preview {
@@ -3392,12 +3384,7 @@ body._lock {
   }
 
   .videos-body {
-    overflow-x: auto;
     padding: 0 24px;
-  }
-
-  .videos-body__item {
-    flex: 0 0 250px;
   }
 
   .videos-body__item-title {

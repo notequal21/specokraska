@@ -941,3 +941,17 @@ export const youtubeModal = () => {
     })
   }
 }
+
+export const youtubeSlider = () => {
+  const swiper = new Swiper('.videos-body', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    speed: 600,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+      },
+    },
+  })
+}

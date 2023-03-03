@@ -21,11 +21,10 @@
     }
   }
   &-body {
-    display: flex;
     margin: 32px 0 0;
+    overflow: hidden;
 
     @media (max-width: 991px) {
-      overflow-x: auto;
       padding: 0 24px;
     }
     @media (max-width: 767px) {
@@ -33,16 +32,6 @@
     }
 
     &__item {
-      flex: 0 0 calc(25% - 18px);
-
-      @media (max-width: 991px) {
-        flex: 0 0 250px;
-      }
-
-      &:not(:first-child) {
-        margin: 0 0 0 24px;
-      }
-
       &-preview {
         position: relative;
         border-radius: 5px;
