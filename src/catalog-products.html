@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+
+      @@include('components/_breadcrumbs.html')
+      @@include('pages/products/_spares-top.html')
+      @@include('pages/products/_list.html')
+      @@include('pages/products/_banners.html')
+      @@include('pages/index/_videos.html')
+      @@include('pages/products/_text.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+      @@include('components/modals/_sort.html')
+      @@include('components/modals/_filter.html')
+
+      @@include('components/_breadcrumbs.html')
+      @@include('pages/catalog/_spares-top.html')
+
+      <div class="catalog">
+        <div class="container">
+          <div class="catalog-body">
+            <div class="catalog-col">
+              <div class="catalog-menu">
+                <a href="" class="catalog-menu__item _back">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                  Вернуться в каталог
+
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Безвоздушные окрасочные аппараты
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item _active">
+                  Промышленное окрасочное оборудование
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Разметочные машины
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div class="catalog-filter">
+                <div class="catalog-filter__title">
+                  Цена, ₽
+                </div>
+                <div class="catalog-filter__range">
+                  <div id="range-slider"></div>
+                </div>
+                <div class="catalog-filter__fromto">
+                  <input type="number" placeholder="От">
+                  <input type="number" placeholder="До">
+                </div>
+                <div class="catalog-filter__title">
+                  Бренд
+                </div>
+                <div class="catalog-filter__checks">
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">Shtaer</span>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">Shtaer</span>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">Shtaer</span>
+                  </label>
+                </div>
+                <div class="catalog-filter__title">
+                  страна
+                </div>
+                <div class="catalog-filter__checks">
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">Китай</span>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">США</span>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+                    <span class="text">Южная Корея</span>
+                  </label>
+                </div>
+                <div class="catalog-filter__title">
+                  производительность, л/м
+                </div>
+                <div class="catalog-filter__perfomance">
+                  <div id="range-perfomance-slider"></div>
+                </div>
+                <div class="catalog-filter__fromto">
+                  <input type="number" placeholder="От">
+                  <input type="number" placeholder="До">
+                </div>
+                <div class="catalog-filter__show btn">
+                  показать
+                </div>
+                <div class="catalog-filter__cancel btn btn_gray">
+                  сбросить фильтр
+                </div>
+              </div>
+            </div>
+            <div class="catalog-col">
+              @@include('pages/catalog/_catalog-top.html')
+              @@include('pages/catalog/_catalog-content.html')
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

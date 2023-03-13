@@ -48,6 +48,7 @@
   "dependencies": {
     "inputmask": "^5.0.7",
     "just-validate": "^4.2.0",
+    "nouislider": "^15.7.0",
     "swiper": "^9.0.5"
   }
 }

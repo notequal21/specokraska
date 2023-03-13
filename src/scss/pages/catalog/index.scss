@@ -1,0 +1,341 @@
+.catalog {
+  margin: 48px 0 64px;
+
+  @media (max-width: 991px) {
+    margin: 40px 0 0;
+    .container {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin: 32px 0 0;
+  }
+
+  &-menu {
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 16px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 8px 8px 8px 16px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #231f20;
+      border-radius: 4px;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03),
+          0px 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      &._active {
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03),
+          0px 5px 15px rgba(0, 0, 0, 0.05);
+
+        svg {
+          path {
+            stroke: #faa61a;
+          }
+        }
+      }
+
+      &._back {
+        padding: 8px 8px 8px 0;
+
+        svg {
+          margin: 0 8px 0 0;
+          transform: scale(-1, 1);
+
+          path {
+            stroke: #d9d9d9;
+          }
+        }
+      }
+
+      svg {
+        flex: 0 0 auto;
+        margin: 0 0 0 auto;
+
+        path {
+          stroke: #d9d9d9;
+        }
+      }
+
+      &:not(:first-child) {
+        margin: 12px 0 0;
+      }
+    }
+  }
+
+  &-filter {
+    &__title {
+      font-family: 'Futura PT';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #231f20;
+
+      &:not(:first-child) {
+        margin: 24px 0 0;
+      }
+    }
+    &__checks {
+      margin: 16px 0 0;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        align-items: center;
+
+        input {
+          display: none;
+
+          &:checked + .fake {
+            border-color: #faa61a;
+            img {
+              transform: scale(1);
+            }
+          }
+        }
+
+        &:not(:first-child) {
+          margin: 8px 0 0;
+        }
+
+        .fake {
+          cursor: pointer;
+          flex: 0 0 auto;
+          border: 2px solid #d9d9d9;
+          border-radius: 2px;
+          width: 16px;
+          height: 16px;
+          transition: all 0.3s ease;
+
+          img {
+            width: 12px;
+            height: 12px;
+            object-fit: contain;
+
+            transition: all 0.3s ease;
+            transform: scale(0);
+          }
+        }
+        .text {
+          cursor: pointer;
+          margin: 0 0 0 8px;
+          font-family: 'Futura PT';
+          font-size: 16px;
+          line-height: 21px;
+          color: #231f20;
+        }
+      }
+    }
+    &__range {
+      margin: 26px 0 0;
+      #range-slider {
+      }
+      .noUi-target {
+        border-radius: 0;
+        border: none;
+        background-color: #d9d9d9;
+      }
+      .noUi-horizontal {
+        height: 4px;
+      }
+      .noUi-connects {
+        border-radius: 0;
+      }
+      .noUi-connect {
+        background: #faa61a;
+      }
+      .noUi-horizontal .noUi-handle {
+        top: -10px;
+        width: 24px;
+        height: 24px;
+        background: #ffffff;
+        border: 2px solid #faa61a;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+      .noUi-pips-horizontal {
+        position: absolute;
+        top: -28px;
+        padding: 0;
+        height: 30px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        pointer-events: none;
+      }
+      .noUi-marker-horizontal.noUi-marker {
+        display: none;
+      }
+      .noUi-value-horizontal {
+        font-family: 'Futura PT';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: #919191;
+
+        &::before {
+          content: '';
+          display: block;
+          height: 18px;
+          width: 1px;
+          background-color: #919191;
+          position: absolute;
+          left: 50%;
+          top: calc(100% + 3px);
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+    &__fromto {
+      margin: 26px 0 0;
+      display: flex;
+
+      input {
+        width: 100%;
+        height: 50px;
+        padding: 0 16px;
+        background: #ffffff;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        flex: 0 0 calc(50% - 8px);
+
+        font-family: 'Futura PT';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #919191;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &:not(:first-child) {
+          margin: 0 0 0 16px;
+        }
+      }
+    }
+    &__perfomance {
+      margin: 36px 0 0;
+
+      #range-perfomance-slider {
+      }
+      .noUi-target {
+        border-radius: 0;
+        border: none;
+        background-color: #d9d9d9;
+      }
+      .noUi-horizontal {
+        height: 4px;
+      }
+      .noUi-connects {
+        border-radius: 0;
+      }
+      .noUi-connect {
+        background: #faa61a;
+      }
+      .noUi-horizontal .noUi-handle {
+        top: -10px;
+        width: 24px;
+        height: 24px;
+        background: #ffffff;
+        border: 2px solid #faa61a;
+        border-radius: 50%;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+      .noUi-pips-horizontal {
+        position: absolute;
+        top: -28px;
+        padding: 0;
+        height: 30px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        pointer-events: none;
+      }
+      .noUi-marker-horizontal.noUi-marker {
+        display: none;
+      }
+      .noUi-value-horizontal {
+        font-family: 'Futura PT';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: #919191;
+
+        &::before {
+          content: '';
+          display: block;
+          height: 18px;
+          width: 1px;
+          background-color: #919191;
+          position: absolute;
+          left: 50%;
+          top: calc(100% + 3px);
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+    &__show {
+      margin: 32px 0 0;
+      width: 100%;
+    }
+    &__cancel {
+      margin: 32px 0 0;
+      width: 100%;
+    }
+  }
+
+  &-body {
+    display: flex;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+  &-col {
+    &:nth-child(1) {
+      flex: 0 0 312px;
+
+      @media (max-width: 1200px) {
+        flex: 0 0 270px;
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    &:nth-child(2) {
+      flex: 1 1 100%;
+      margin: 0 0 0 24px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 auto;
+        margin: 0;
+      }
+    }
+  }
+}

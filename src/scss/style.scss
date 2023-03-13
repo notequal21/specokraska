@@ -11,12 +11,24 @@
 @import 'components/_ui.scss';
 @import 'components/modals/modal.scss';
 @import 'components/modals/_yt-modal.scss';
+@import 'components/_breadcrumbs.scss';
+@import 'components/_nouislider.scss';
 @import 'pages/index/_main.scss';
 @import 'pages/index/_popular.scss';
 @import 'pages/index/_goods.scss';
 @import 'pages/index/_videos.scss';
 @import 'pages/index/_main-text.scss';
 @import 'pages/index/_partners.scss';
+@import 'pages/spares/_spares-top.scss';
+@import 'pages/spares/_spares-text.scss';
+@import 'pages/spares/_spares-content.scss';
+@import 'pages/spares-list/_spares-list.scss';
+@import 'pages/spares-list/_spares-items.scss';
+@import 'pages/catalog/index.scss';
+@import 'pages/catalog/_catalog-top.scss';
+@import 'pages/catalog/_catalog-content.scss';
+@import 'pages/catalog/item/_content.scss';
+@import 'pages/cart.scss';
 
 @import './node_modules/swiper/swiper.scss';
 @import './node_modules/swiper/modules/pagination/pagination.scss';

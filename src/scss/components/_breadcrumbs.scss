@@ -1,0 +1,49 @@
+.breadcrumbs {
+  margin: 24px 0 40px;
+
+  @media (max-width: 960px) {
+    margin: 144px 0 16px;
+  }
+  @media (max-width: 767px) {
+    margin: 164px 0 16px;
+  }
+
+  &__back {
+    img {
+      transform: scale(-1, 1);
+    }
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &-body {
+    display: flex;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    &__item {
+      font-size: 16px;
+      line-height: 21px;
+      color: #919191;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #231f20;
+      }
+
+      &:not(:first-child) {
+        &::before {
+          content: '/';
+          margin: 0 2px 0 5px;
+        }
+      }
+
+      &:last-child {
+        color: #231f20;
+      }
+    }
+  }
+}

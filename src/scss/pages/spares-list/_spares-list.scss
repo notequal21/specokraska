@@ -1,0 +1,49 @@
+.spares-list {
+  margin: 0 0 40px;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    margin: 0 0 24px;
+  }
+
+  &__title {
+    font-family: 'Futura PT';
+    font-size: 16px;
+    line-height: 21px;
+    color: #231f20;
+  }
+
+  &__slider {
+    margin: 8px 0 0;
+
+    .swiper-slide {
+      display: inline-flex;
+      width: auto !important;
+    }
+
+    a {
+      height: 38px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #ededed;
+      border-radius: 5px;
+      padding: 0 16px;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #231f20;
+
+      @media (max-width: 1200px) {
+        height: 34px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &._active {
+        background: #faa61a;
+      }
+    }
+  }
+}
