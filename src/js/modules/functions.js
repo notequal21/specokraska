@@ -1490,6 +1490,7 @@ export const searchResult = () => {
         searchShadow.value = '';
       } else {
         list.classList.add('_open');
+        searchShadow.value = '';
       }
     });
 
