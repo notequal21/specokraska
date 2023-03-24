@@ -198,6 +198,205 @@ export const tabsCard = () => {
   });
 };
 
+export const tabsOrder = () => {
+  if (document.querySelector('._order-form')) {
+    let currentContent = 0;
+    const contentTitle = document.querySelector('._order-content__title');
+    const btnPrev = document.querySelector('._order-btn__prev');
+    const btnNext = document.querySelector('._order-btn__next');
+    const btnOrder = document.querySelector('._order-btn__order');
+
+    const selectorOrder = document.querySelector('._phone-order-mask');
+    Inputmask({ mask: '+7 (999) 999-99-99' }).mask(selectorOrder);
+
+    let isFormSubmit = false;
+    const validateCallbackOrder = new JustValidate('._order-form', {
+      validateBeforeSubmitting: true,
+    });
+    validateCallbackOrder
+      .addField('._input-email', [
+        {
+          rule: 'email',
+          value: true,
+          errorMessage: '',
+        },
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .addField('._input-name', [
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .addField('._input-phone', [
+        {
+          rule: 'required',
+          value: true,
+          errorMessage: '',
+        },
+      ])
+      .onValidate((e) => {
+        e.isValid ? (isFormSubmit = true) : (isFormSubmit = false);
+      })
+      .onSuccess((event) => {
+        isFormSubmit = true;
+      });
+
+    const handleValidate = () => {
+      if (
+        validateCallbackOrder.fields[1].isValid == false ||
+        validateCallbackOrder.fields[1].isValid == undefined
+      ) {
+        validateCallbackOrder.showErrors({
+          '._input-name': '',
+        });
+      }
+      if (
+        validateCallbackOrder.fields[2].isValid == false ||
+        validateCallbackOrder.fields[2].isValid == undefined
+      ) {
+        validateCallbackOrder.showErrors({
+          '._input-email': '',
+        });
+      }
+      if (
+        validateCallbackOrder.fields[3].isValid == false ||
+        validateCallbackOrder.fields[3].isValid == undefined
+      ) {
+        validateCallbackOrder.showErrors({
+          '._input-phone': '',
+        });
+      }
+    };
+
+    var jsTriggers = document.querySelectorAll('.js-tab-order-trigger'),
+      jsContents = document.querySelectorAll('.js-tab-order-content');
+    jsTriggers.forEach(function (trigger, index) {
+      trigger.addEventListener('click', function () {
+        if (isFormSubmit) {
+          var id = this.getAttribute('data-tab'),
+            content = document.querySelector(
+              '.js-tab-order-content[data-tab="' + id + '"]'
+            ),
+            activeTrigger = document.querySelector(
+              '.js-tab-order-trigger._active'
+            ),
+            activeContent = document.querySelector(
+              '.js-tab-order-content._active'
+            );
+
+          activeTrigger.classList.remove('_active');
+          trigger.classList.add('_active');
+
+          activeContent.classList.remove('_active');
+          content.classList.add('_active');
+
+          currentContent = id - 1;
+          if (currentContent == 3) {
+            btnNext.classList.add('_disabled');
+            btnOrder.classList.remove('_disabled');
+            contentTitle.innerHTML = 'Подтверждение заказа';
+          } else if (currentContent == 0) {
+            btnPrev.classList.add('_disabled');
+            btnNext.classList.remove('_disabled');
+            btnOrder.classList.add('_disabled');
+            contentTitle.innerHTML = 'Платежная информация';
+          } else {
+            btnOrder.classList.add('_disabled');
+            btnNext.classList.remove('_disabled');
+            btnPrev.classList.remove('_disabled');
+
+            if (currentContent == 1) {
+              contentTitle.innerHTML = 'Доставка';
+            } else if (currentContent == 2) {
+              contentTitle.innerHTML = 'Оплата';
+            }
+          }
+        } else {
+          handleValidate();
+        }
+      });
+    });
+
+    btnNext.addEventListener('click', () => {
+      if (isFormSubmit) {
+        jsContents.forEach((item, index) => {
+          if (item.classList.contains('_active')) {
+            jsTriggers[currentContent].classList.remove('_active');
+            jsContents[currentContent].classList.remove('_active');
+
+            currentContent = ++index;
+
+            if (currentContent == 3) {
+              btnNext.classList.add('_disabled');
+              btnOrder.classList.remove('_disabled');
+              contentTitle.innerHTML = 'Подтверждение заказа';
+            } else if (currentContent == 0) {
+              btnPrev.classList.add('_disabled');
+              contentTitle.innerHTML = 'Платежная информация';
+            } else {
+              btnOrder.classList.add('_disabled');
+              btnNext.classList.remove('_disabled');
+              btnPrev.classList.remove('_disabled');
+
+              if (currentContent == 1) {
+                contentTitle.innerHTML = 'Доставка';
+              } else if (currentContent == 2) {
+                contentTitle.innerHTML = 'Оплата';
+              }
+            }
+          }
+        });
+
+        jsTriggers[currentContent].classList.add('_active');
+        jsContents[currentContent].classList.add('_active');
+      } else {
+        handleValidate();
+      }
+    });
+    btnPrev.addEventListener('click', () => {
+      if (isFormSubmit) {
+        jsContents.forEach((item, index) => {
+          if (item.classList.contains('_active')) {
+            jsTriggers[currentContent].classList.remove('_active');
+            jsContents[currentContent].classList.remove('_active');
+
+            currentContent = --index;
+
+            if (currentContent == 3) {
+              btnNext.classList.add('_disabled');
+              btnOrder.classList.remove('_disabled');
+              contentTitle.innerHTML = 'Подтверждение заказа';
+            } else if (currentContent == 0) {
+              btnPrev.classList.add('_disabled');
+              contentTitle.innerHTML = 'Платежная информация';
+            } else {
+              btnOrder.classList.add('_disabled');
+              btnNext.classList.remove('_disabled');
+
+              if (currentContent == 1) {
+                contentTitle.innerHTML = 'Доставка';
+              } else if (currentContent == 2) {
+                contentTitle.innerHTML = 'Оплата';
+              }
+            }
+          }
+        });
+
+        jsTriggers[currentContent].classList.add('_active');
+        jsContents[currentContent].classList.add('_active');
+      } else {
+        handleValidate();
+      }
+    });
+  }
+};
+
 export const upBtn = () => {
   document.addEventListener('DOMContentLoaded', function () {
     let btn = document.querySelector('#toTop');
@@ -219,11 +418,16 @@ export const upBtn = () => {
   });
 };
 
-//
-
 export const serachSelect = () => {
-  const select1 = new ItcCustomSelect('#select-1');
-  // console.log(select1.value)
+  if (document.querySelector('#select-1')) {
+    const select1 = new ItcCustomSelect('#select-1');
+  }
+};
+
+export const orderSelect = () => {
+  if (document.querySelector('#select-2')) {
+    const select2 = new ItcCustomSelect('#select-2');
+  }
 };
 
 export const goodsTabs = () => {
@@ -1268,6 +1472,45 @@ export const filterRangeSlider = () => {
         max: 20,
       },
       pips: { mode: 'count', values: 5 },
+    });
+  }
+};
+
+export const searchResult = () => {
+  if (document.querySelector('.order-city__list')) {
+    const list = document.querySelector('.order-city__list');
+    const listItem = document.querySelectorAll('.order-city__list-item');
+    const search = document.querySelector('._order-city__input');
+    const searchShadow = document.querySelector('.order-city__shadow');
+    const clear = document.querySelector('._clear');
+
+    search.addEventListener('input', (e) => {
+      if (e.target.value.length == 0) {
+        list.classList.remove('_open');
+        searchShadow.value = '';
+      } else {
+        list.classList.add('_open');
+      }
+    });
+
+    listItem.forEach((item) => {
+      item.addEventListener('click', () => {
+        searchShadow.value = 'Москва, Центр, Россия';
+        search.value = 'Москва';
+        search.focus();
+        list.classList.remove('_open');
+      });
+    });
+
+    clear.addEventListener('click', () => {
+      searchShadow.value = '';
+      search.value = '';
+      search.focus();
+      list.classList.remove('_open');
+    });
+
+    list.addEventListener('mouseleave', () => {
+      list.classList.remove('_open');
     });
   }
 };

@@ -31,6 +31,7 @@
     }
     @media (max-width: 767px) {
       flex: 1 1 100%;
+      min-height: auto;
     }
 
     &._good {

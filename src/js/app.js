@@ -2,7 +2,9 @@ import * as functions from './modules/functions.js';
 
 functions.isWebp();
 functions.serachSelect();
+functions.orderSelect();
 functions.goodsTabs();
+functions.tabsOrder();
 functions.mainSlider();
 functions.mainMenu();
 functions.modalCall();
@@ -28,3 +30,4 @@ functions.modalSort();
 functions.modalFilter();
 functions.filterRangeSlider();
 functions.tabsCard();
+functions.searchResult();

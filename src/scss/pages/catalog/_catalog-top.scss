@@ -26,6 +26,10 @@
     &:hover {
       .catalog-top__item-title {
         text-decoration: underline;
+
+        @media (max-width: 767px) {
+          text-decoration: unset;
+        }
       }
     }
 

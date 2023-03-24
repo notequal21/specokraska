@@ -406,6 +406,12 @@
       flex-wrap: wrap;
     }
 
+    &._catalog-banners {
+      .main-banners__item {
+        height: auto;
+      }
+    }
+
     &__item {
       cursor: pointer;
       flex: 0 0 calc(33.333% - 16px);
