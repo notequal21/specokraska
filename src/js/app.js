@@ -31,3 +31,4 @@ functions.modalFilter();
 functions.filterRangeSlider();
 functions.tabsCard();
 functions.searchResult();
+functions.cartClose();

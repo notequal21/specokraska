@@ -1514,3 +1514,22 @@ export const searchResult = () => {
     });
   }
 };
+
+export const cartClose = () => {
+  if (window.innerWidth < 992 && document.querySelector('.cart-item__close')) {
+    const itemsList = document.querySelectorAll('.cart-item');
+    const closeBtns = document.querySelectorAll('.cart-item__close');
+
+    itemsList.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        if (e.target == item.querySelector('.cart-item__close')) {
+          if (item.classList.contains('_close')) {
+            item.classList.remove('_close');
+          } else {
+            item.classList.add('_close');
+          }
+        }
+      });
+    });
+  }
+};
