@@ -270,6 +270,60 @@
       justify-content: unset;
       height: 100%;
     }
+
+    .article-menu__search {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-family: 'Futura PT';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px 0 0;
+        padding: 0 16px;
+        height: 50px;
+
+        background: #ffffff;
+        border: 1px solid #ededed;
+        border-radius: 5px;
+
+        input {
+          width: 100%;
+
+          font-family: 'Futura PT';
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+
+          &::placeholder {
+            color: #919191;
+          }
+        }
+        button {
+          margin: 4px 0 0;
+          flex: 0 0 auto;
+          background-color: transparent;
+        }
+      }
+    }
+
+    &._modal-filter_articles {
+      .catalog-filter__title {
+        text-transform: unset;
+      }
+
+      .catalog-filter__checks {
+        margin: 8px 0 0;
+      }
+    }
   }
 
   &__bg {

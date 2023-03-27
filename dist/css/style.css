@@ -1463,6 +1463,65 @@ p._sm {
   height: 100%;
 }
 
+.modal._modal-filter .article-menu__search {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal._modal-filter .article-menu__search span {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.modal._modal-filter .article-menu__search label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 0;
+  padding: 0 16px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+
+.modal._modal-filter .article-menu__search label input {
+  width: 100%;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal._modal-filter .article-menu__search label input::-moz-placeholder {
+  color: #919191;
+}
+
+.modal._modal-filter .article-menu__search label input:-ms-input-placeholder {
+  color: #919191;
+}
+
+.modal._modal-filter .article-menu__search label input::placeholder {
+  color: #919191;
+}
+
+.modal._modal-filter .article-menu__search label button {
+  margin: 4px 0 0;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.modal._modal-filter._modal-filter_articles .catalog-filter__title {
+  text-transform: unset;
+}
+
+.modal._modal-filter._modal-filter_articles .catalog-filter__checks {
+  margin: 8px 0 0;
+}
+
 .modal__bg {
   position: absolute;
   z-index: 1;
@@ -3630,6 +3689,7 @@ p._sm {
 .catalog-filter__cancel {
   margin: 32px 0 0;
   width: 100%;
+  color: #919191;
 }
 
 .catalog-body {
@@ -5250,6 +5310,396 @@ p._sm {
   width: 100%;
 }
 
+.catalog.catalog_articles .article-menu {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.catalog.catalog_articles .article-menu__search {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog.catalog_articles .article-menu__search span {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.catalog.catalog_articles .article-menu__search label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 0;
+  padding: 0 16px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+
+.catalog.catalog_articles .article-menu__search label input {
+  width: 100%;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog.catalog_articles .article-menu__search label input::-moz-placeholder {
+  color: #919191;
+}
+
+.catalog.catalog_articles .article-menu__search label input:-ms-input-placeholder {
+  color: #919191;
+}
+
+.catalog.catalog_articles .article-menu__search label input::placeholder {
+  color: #919191;
+}
+
+.catalog.catalog_articles .article-menu__search label button {
+  margin: 4px 0 0;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.catalog.catalog_articles .article-menu .catalog-filter__title {
+  margin: 16px 0 0;
+  text-transform: unset;
+}
+
+.catalog.catalog_articles .article-menu .catalog-filter__checks {
+  margin: 8px 0 0;
+}
+
+.catalog.catalog_articles .article-menu .catalog-filter__cancel,
+.catalog.catalog_articles .article-menu .catalog-filter__show {
+  margin: 16px 0 0;
+}
+
+.catalog.catalog_articles .goods-content .article-item {
+  flex: 0 0 calc(33.333% - 16px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.catalog.catalog_articles .goods-content .article-item:hover {
+  box-shadow: 0px 20px 24px -4px rgba(137, 142, 156, 0.25), 0px 8px 8px -4px rgba(148, 148, 148, 0.2);
+}
+
+.catalog.catalog_articles .goods-content .article-item:not(:first-child) {
+  margin: 24px 0 0 24px;
+}
+
+.catalog.catalog_articles .goods-content .article-item:nth-child(3n+1) {
+  margin: 24px 0 0;
+}
+
+.catalog.catalog_articles .goods-content .article-item:nth-child(2),
+.catalog.catalog_articles .goods-content .article-item:nth-child(3) {
+  margin: 0 0 0 24px;
+}
+
+.catalog.catalog_articles .goods-content .article-item:first-child {
+  margin: 0;
+}
+
+.catalog.catalog_articles .goods-content .article-item__img {
+  height: 200px;
+}
+
+.catalog.catalog_articles .goods-content .article-item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog.catalog_articles .goods-content .article-item__text {
+  padding: 16px;
+}
+
+.catalog.catalog_articles .goods-content .article-item__date {
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.catalog.catalog_articles .goods-content .article-item__title {
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.catalog.catalog_articles .goods-content .article-item__desc {
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.catalog.catalog_articles ._spares-items__bottom {
+  border-top: 1px solid #d9d9d9 !important;
+  border-bottom: none;
+  margin: 24px 0 54px;
+  padding: 32px 0 0;
+}
+
+.article {
+  margin: 64px 0 0;
+}
+
+.article-body {
+  display: flex;
+}
+
+.article-body h3 {
+  margin: 16px 0 8px;
+}
+
+.article-body p {
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.article-body img {
+  margin: 16px 0 0;
+  border-radius: 6px;
+}
+
+.article-body ul li {
+  position: relative;
+  padding: 0 0 0 24px;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.article-body ul li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.article-col {
+  flex: 0 1 50%;
+}
+
+.article-col:nth-child(2) {
+  margin: 0 0 0 24px;
+}
+
+.article-col__img {
+  width: 100%;
+}
+
+.article-col__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-date {
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.article-date._mobile {
+  display: none;
+}
+
+.article-bottom {
+  margin: 64px 0;
+  padding: 32px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+}
+
+.article-bottom__btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 52px;
+  transition: all 0.3s ease;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.article-bottom__btn:hover {
+  background-color: #d9d9d9;
+}
+
+.article-bottom__btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 56px;
+  height: 100%;
+}
+
+.article-bottom__btn._prev {
+  padding: 0 16px 0 0;
+}
+
+.article-bottom__btn._prev span {
+  margin: 0 16px 0 0;
+  border-right: 1px solid #d9d9d9;
+}
+
+.article-bottom__btn._back {
+  padding: 0 56px;
+}
+
+.article-bottom__btn._back span {
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0 0 0 5px;
+}
+
+.article-bottom__btn._next {
+  padding: 0 0 0 16px;
+}
+
+.article-bottom__btn._next span {
+  margin: 0 0 0 16px;
+  border-left: 1px solid #d9d9d9;
+}
+
+.article-bottom__btn._next span svg {
+  transform: scale(-1, 1);
+}
+
+.news {
+  margin: 64px 0 0;
+}
+
+.news-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  flex: 0 0 calc(50% - 12px);
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.news-item:hover {
+  box-shadow: 0px 20px 24px -4px rgba(137, 142, 156, 0.25), 0px 8px 8px -4px rgba(148, 148, 148, 0.2);
+}
+
+.news-item:hover .news-item__text-title {
+  color: #faa61a;
+}
+
+.news-item:not(:first-child) {
+  margin: 24px 0 0 24px;
+}
+
+.news-item:nth-child(2n+1) {
+  margin: 24px 0 0;
+}
+
+.news-item:nth-child(1) {
+  margin: 0;
+}
+
+.news-item:nth-child(2) {
+  margin: 0 0 0 24px;
+}
+
+.news-item__img {
+  height: 164px;
+}
+
+.news-item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-item__text {
+  padding: 16px;
+}
+
+.news-item__text-date {
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.news-item__text-title {
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+  transition: all 0.3s ease;
+}
+
+.news-bottom {
+  margin: 64px 0;
+  padding: 32px 0 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d9d9d9;
+}
+
+.news-bottom__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
 /**
  * Swiper 9.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -6201,6 +6651,18 @@ body._lock {
   .cart-col:nth-child(2) {
     flex: 0 0 320px;
   }
+
+  .article-body img {
+    width: 100%;
+  }
+
+  .article-col {
+    flex: 1 1 50%;
+  }
+
+  .article-col:nth-child(2) {
+    flex: 0 0 400px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -7149,6 +7611,162 @@ body._lock {
   .cart-item__close {
     display: none;
   }
+
+  .catalog.catalog_articles .goods-content .article-item__date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item__desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .catalog.catalog_articles ._spares-items__bottom {
+    margin: 40px 0;
+    padding: 32px 0 0;
+  }
+
+  .article {
+    margin: 0;
+  }
+
+  .article-body {
+    flex-direction: column-reverse;
+  }
+
+  .article-body p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .article-body img {
+    width: 352px;
+  }
+
+  .article-body ul li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .article-col {
+    flex: 0 0 auto;
+  }
+
+  .article-col:nth-child(2) {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .article-col__img {
+    width: 352px;
+  }
+
+  .article-col__img img {
+    margin: 0;
+  }
+
+  .article-date {
+    display: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .article-date._mobile {
+    display: block;
+    margin: 16px 0;
+  }
+
+  .article-bottom {
+    margin: 40px 0;
+  }
+
+  .article-bottom__btn._prev {
+    flex: 0 0 auto;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .article-bottom__btn._prev span {
+    width: 52px;
+    margin: 0;
+    border: none;
+  }
+
+  .article-bottom__btn._prev span svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .article-bottom__btn._back {
+    flex: 1 1 100%;
+    margin: 0 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .article-bottom__btn._next {
+    flex: 0 0 auto;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .article-bottom__btn._next span {
+    width: 52px;
+    border: none;
+    margin: 0;
+  }
+
+  .article-bottom__btn._next span svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .article.article_news h3 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .article.article_news p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .article.article_news .article-col__img {
+    width: 100%;
+  }
+
+  .news {
+    margin: 40px 0 0;
+  }
+
+  .news-item__img {
+    height: 74px;
+  }
+
+  .news-item__text-date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .news-item__text-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .news-bottom {
+    margin: 40px 0;
+  }
+
+  .news-bottom__btn {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -7242,6 +7860,28 @@ body._lock {
 
   .cart_order-content .order-profile .itc-select {
     display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .catalog.catalog_articles .goods-content .article-item {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:not(:first-child) {
+    margin: 24px 0 0 16px;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:nth-child(2n+1) {
+    margin: 24px 0 0;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:nth-child(2) {
+    margin: 0 0 0 16px;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:first-child {
+    margin: 0;
   }
 }
 
@@ -7925,6 +8565,68 @@ body._lock {
     margin: 16px 0 0;
     font-size: 13px;
     line-height: 17px;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item {
+    flex: 0 0 100%;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:not(:first-child) {
+    margin: 16px 0 0 !important;
+  }
+
+  .catalog.catalog_articles .goods-content .article-item:first-child {
+    margin: 0;
+  }
+
+  .catalog.catalog_articles ._spares-items__bottom {
+    margin: 32px 0;
+    padding: 32px 0 0;
+  }
+
+  .article-body img {
+    width: 100%;
+  }
+
+  .article-body ul li {
+    padding: 0 0 0 20px;
+  }
+
+  .article-body ul li::before {
+    left: 8px;
+  }
+
+  .article-col__img {
+    width: 100%;
+  }
+
+  .article-bottom {
+    margin: 32px 0;
+  }
+
+  .article-bottom__btn._back {
+    margin: 0 24px;
+    padding: 0 16px;
+  }
+
+  .article-bottom__btn._back span {
+    display: none;
+  }
+
+  .news {
+    margin: 32px 0 0;
+  }
+
+  .news-item {
+    flex: 1 1 100%;
+  }
+
+  .news-item:not(:first-child) {
+    margin: 16px 0 0;
+  }
+
+  .news-bottom {
+    margin: 32px 0;
   }
 
   .container {

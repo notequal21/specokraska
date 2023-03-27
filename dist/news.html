@@ -856,6 +856,157 @@
 
 <!-- <iframe src="https://www.youtube.com/embed/iT6P2ajyf2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
+      <div class="modal _modal-sort">
+  <div class="modal__bg _modal-sort__bg"></div>
+  <div class="modal-body">
+    <div class="modal-body__close _modal-sort__close">
+      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 3L21.5 21M21.5 3L3.5 21" stroke="#BABABA" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="sort_modal-body__title">
+      Сортировать:
+    </div>
+    <div class="sort_modal-body__items">
+      <a href="" class="sort_modal-body__item">
+        По популярности
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H4M0 4H6M0 7H8" stroke="black" />
+        </svg>
+      </a>
+      <a href="" class="sort_modal-body__item _active">
+        По новизне
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H4M0 4H6M0 7H8" stroke="black" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+      <div class="modal _modal-filter _modal-filter_articles">
+  <div class="modal__bg _modal-filter__bg"></div>
+  <div class="modal-body">
+    <div class="mobile-catalog__top _mobile-catalog__top">
+      <div class="mobile-catalog__top-title">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 19L10 19M17 12L7 12M21 5L3 5" stroke="black" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
+        Фильтр
+      </div>
+      <div class="mobile-catalog__top-close _modal-filter__close">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.5 3L21.5 21M21.5 3L3.5 21" stroke="#BABABA" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="modal-body__con">
+      <div class="modal-body__filter">
+        <div class="article-menu__search">
+          <span>Поиск по тексту</span>
+
+          <label>
+            <input placeholder="Что вы ищите?" type="text">
+            <button>
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.1195 10.492L14.8709 13.227C15.1988 13.5529 15.1989 14.0833 14.8712 14.4093C14.5461 14.7328 14.0208 14.7329 13.6955 14.4096L10.9255 11.657C9.77805 12.4935 8.37026 12.8942 6.95426 12.7874C5.53825 12.6806 4.20652 12.0732 3.19753 11.074C2.64586 10.5269 2.20781 9.87613 1.90857 9.15912C1.60932 8.44212 1.45479 7.67302 1.45386 6.89608C1.45293 6.11913 1.60562 5.34967 1.90315 4.63195C2.20068 3.91423 2.63717 3.26241 3.18753 2.714C4.30805 1.60788 5.81978 0.988577 7.39429 0.990636C8.9688 0.992696 10.4789 1.61595 11.5965 2.725C12.6132 3.73466 13.2271 5.08021 13.3234 6.50982C13.4197 7.93944 12.9917 9.35514 12.1195 10.492ZM4.34853 3.869C3.95009 4.26609 3.63408 4.73803 3.41868 5.25768C3.20327 5.77732 3.09271 6.33443 3.09336 6.89695C3.09401 7.45948 3.20586 8.01632 3.42247 8.53547C3.63907 9.05462 3.95617 9.52583 4.35553 9.922C5.16494 10.7249 6.25848 11.1761 7.39859 11.1774C8.53869 11.1787 9.63327 10.7301 10.4445 9.929C10.8431 9.53197 11.1592 9.06005 11.3747 8.5404C11.5902 8.02074 11.7008 7.4636 11.7001 6.90104C11.6995 6.33848 11.5876 5.7816 11.3709 5.26244C11.1542 4.74328 10.837 4.2721 10.4375 3.876C9.62799 3.0733 8.53449 2.62235 7.39446 2.62104C6.25444 2.61973 5.15991 3.06817 4.34853 3.869Z"
+                  fill="#FAA61A" />
+              </svg>
+            </button>
+          </label>
+        </div>
+        <div class="catalog-filter__title">
+          Категория статьи
+        </div>
+        <div class="catalog-filter__checks">
+          <label>
+            <input type="checkbox">
+            <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+            <span class="text">Выбор оборудования</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+            <span class="text">Мнение экспертов</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+            <span class="text">Обзор продукции</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+            <span class="text">Сравнение товаров</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span class="fake"><img src="./img/icons/check-box.svg" alt=""></span>
+            <span class="text">Тестирование оборудования</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="_modal-filter__bottom">
+      <div class="_modal-filter__bottom-params">
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button>
+          Выбранный параметр
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 2L14.5 14M14.5 2L2.5 14" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="_modal-filter__bottom-btns">
+        <button class="_reset">
+          Сбросить
+        </button>
+        <button class="_show">
+          показать 140 товаров
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div class="breadcrumbs">
   <div class="container">
     <div class="breadcrumbs__back">
@@ -883,420 +1034,150 @@
         <div class="container">
           <div class="spares-top__body">
             <h1 class="spares-top__title">
-              моя корзина
+              Новости
             </h1>
           </div>
         </div>
       </div>
 
-      <div class="cart">
+      <div class="news">
         <div class="container">
-          <div class="cart-body">
-            <div class="cart-col">
-              <div class="cart-top">
-                В корзине 2 товара
+          <div class="news-body">
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
               </div>
-              <div class="cart-item">
-                <div class="cart-item__closeblock">Удалить</div>
-
-                <div class="cart-item__row">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <div class="cart-item__close">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="cart-item__img">
-                  <img src="./img/goods/img.jpg" srcset="./img/goods/img.jpg 1x,  ./img/goods/img@2x.jpg 2x" alt="">
-                </div>
-                <div class="cart-item__info">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <a href="" class="cart-item__info-name">
-                    HYVST SPT 1150 L окрасочный аппарат
-                  </a>
-                  <div class="cart-item__info-count">
-                    <img src="./img/icons/cart-check.svg" alt="">
-                    24 товара на складе
-                  </div>
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    По данной позиции требуется уточнение менеджера
-                  </div>
-                </div>
-                <div class="cart-item__price">
-                  <div class="cart-item__price-row">
-                    <div class="_spares-items__item-count">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.666687)" fill="white" />
-                          <path d="M14.6667 19H8.66669H2.66669" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                      <input type="number" value="1">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.333374)" fill="white" />
-                          <path d="M8.33338 13V19M8.33338 19V25M8.33338 19H14.3334M8.33338 19H2.33337" stroke="#231F20"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="cart-item__price-price">
-                      28 000 ₽
-                      <span>
-                        Цена за 1 шт
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-item__price-row">
-                    <span>
-                      На сумму:
-                    </span>
-                    <span class="_price">
-                      28 000 ₽
-                    </span>
-                  </div>
-                </div>
-                <div class="cart-item__close">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <div class="cart-item__row">
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    По данной позиции требуется уточнение менеджера
-                  </div>
-                </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
               </div>
-              <div class="cart-item">
-                <div class="cart-item__closeblock">Удалить</div>
-
-                <div class="cart-item__row">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <div class="cart-item__close">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="cart-item__img">
-                  <img src="./img/goods/img.jpg" srcset="./img/goods/img.jpg 1x,  ./img/goods/img@2x.jpg 2x" alt="">
-                </div>
-                <div class="cart-item__info">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <a href="" class="cart-item__info-name">
-                    HYVST SPT 1150 L окрасочный аппарат
-                  </a>
-                  <div class="cart-item__info-count">
-                    <img src="./img/icons/cart-check.svg" alt="">
-                    24 товара на складе
-                  </div>
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    По данной позиции требуется уточнение менеджера
-                  </div>
-                </div>
-                <div class="cart-item__price">
-                  <div class="cart-item__price-row">
-                    <div class="_spares-items__item-count">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.666687)" fill="white" />
-                          <path d="M14.6667 19H8.66669H2.66669" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                      <input type="number" value="1">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.333374)" fill="white" />
-                          <path d="M8.33338 13V19M8.33338 19V25M8.33338 19H14.3334M8.33338 19H2.33337" stroke="#231F20"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="cart-item__price-price">
-                      28 000 ₽
-                      <span>
-                        Цена за 1 шт
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-item__price-row">
-                    <span>
-                      На сумму:
-                    </span>
-                    <span class="_price">
-                      28 000 ₽
-                    </span>
-                  </div>
-                </div>
-                <div class="cart-item__close">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <div class="cart-item__row">
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    По данной позиции требуется уточнение менеджера
-                  </div>
-                </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
               </div>
-              <div class="cart-item">
-                <div class="cart-item__closeblock">Удалить</div>
-
-                <div class="cart-item__row">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <div class="cart-item__close">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="cart-item__img">
-                  <img src="./img/goods/img.jpg" srcset="./img/goods/img.jpg 1x,  ./img/goods/img@2x.jpg 2x" alt="">
-                </div>
-                <div class="cart-item__info">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <a href="" class="cart-item__info-name">
-                    HYVST SPT 1150 L окрасочный аппарат
-                  </a>
-                  <div class="cart-item__info-count">
-                    <img src="./img/icons/cart-check.svg" alt="">
-                    24 товара на складе
-                  </div>
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    По данной позиции требуется уточнение менеджера
-                  </div>
-                </div>
-                <div class="cart-item__price">
-                  <div class="cart-item__price-row">
-                    <div class="_spares-items__item-count">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.666687)" fill="white" />
-                          <path d="M14.6667 19H8.66669H2.66669" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                      <input type="number" value="1">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.333374)" fill="white" />
-                          <path d="M8.33338 13V19M8.33338 19V25M8.33338 19H14.3334M8.33338 19H2.33337" stroke="#231F20"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="cart-item__price-price">
-                      28 000 ₽
-                      <span>
-                        Цена за 1 шт
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-item__price-row">
-                    <span>
-                      На сумму:
-                    </span>
-                    <span class="_price">
-                      28 000 ₽
-                    </span>
-                  </div>
-                </div>
-                <div class="cart-item__close">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
               </div>
-              <!-- <div class="cart-item">
-                <div class="cart-item__img">
-                  <img src="./img/goods/img.jpg" srcset="./img/goods/img.jpg 1x,  ./img/goods/img@2x.jpg 2x" alt="">
-                </div>
-                <div class="cart-item__info">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <a href="" class="cart-item__info-name">
-                    HYVST SPT 1150 L окрасочный аппарат
-                  </a>
-                  <div class="cart-item__info-count">
-                    <img src="./img/icons/cart-check.svg" alt="">
-                    24 товара на складе
-                  </div>
-                  <div class="cart-item__info-warn">
-                    <img src="./img/icons/warn.svg" alt="">
-                    Доступно 24 шт. Возможность и сроки поставки позиции под заказ сообщит менеджер после обработки
-                    заказа
-                  </div>
-                </div>
-                <div class="cart-item__price">
-                  <div class="cart-item__price-row">
-                    <div class="_spares-items__item-count">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.666687)" fill="white" />
-                          <path d="M14.6667 19H8.66669H2.66669" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                      <input type="number" value="1">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.333374)" fill="white" />
-                          <path d="M8.33338 13V19M8.33338 19V25M8.33338 19H14.3334M8.33338 19H2.33337" stroke="#231F20"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="cart-item__price-price">
-                      28 000 ₽
-                      <span>
-                        Цена за 1 шт
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-item__price-row">
-                    <span>
-                      На сумму:
-                    </span>
-                    <span class="_price">
-                      28 000 ₽
-                    </span>
-                  </div>
-                </div>
-                <div class="cart-item__close">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
               </div>
-              <div class="cart-item">
-                <div class="cart-item__img">
-                  <img src="./img/goods/img.jpg" srcset="./img/goods/img.jpg 1x,  ./img/goods/img@2x.jpg 2x" alt="">
-                </div>
-                <div class="cart-item__info">
-                  <div class="cart-item__info-code">
-                    Артикул: SPT490
-                  </div>
-                  <a href="" class="cart-item__info-name">
-                    HYVST SPT 1150 L окрасочный аппарат
-                  </a>
-                  <div class="cart-item__info-count">
-                    <img src="./img/icons/cart-check.svg" alt="">
-                    24 товара на складе
-                  </div>
-                </div>
-                <div class="cart-item__price">
-                  <div class="cart-item__price-row">
-                    <div class="_spares-items__item-count">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.666687)" fill="white" />
-                          <path d="M14.6667 19H8.66669H2.66669" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                      <input type="number" value="1">
-                      <button>
-                        <svg width="17" height="38" viewBox="0 0 17 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="16" height="38" transform="translate(0.333374)" fill="white" />
-                          <path d="M8.33338 13V19M8.33338 19V25M8.33338 19H14.3334M8.33338 19H2.33337" stroke="#231F20"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="cart-item__price-price">
-                      28 000 ₽
-                      <span>
-                        Цена за 1 шт
-                      </span>
-                    </div>
-                  </div>
-                  <div class="cart-item__price-row">
-                    <span>
-                      На сумму:
-                    </span>
-                    <span class="_price">
-                      28 000 ₽
-                    </span>
-                  </div>
-                </div>
-                <div class="cart-item__close">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L13 13M13 1L1 13" stroke="#919191" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div> -->
-            </div>
-            <div class="cart-col">
-              <div class="cart-order">
-                <div class="cart-order__title">
-                  Ваш заказ
-                </div>
-                <div class="cart-order__price">
-                  <span>На сумму</span>
-                  <span class="_value">
-                    28 000 ₽
-                  </span>
-                </div>
-                <div class="cart-order__input">
-                  <span>
-                    Введите код купона для скидки:
-                  </span>
-                  <label>
-                    <input type="text">
-                    <button>
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </label>
-                </div>
-                <div class="cart-order__nds">
-                  <span>Сумма НДС:</span>
-                  <span class="_value">
-                    12 000 ₽
-                  </span>
-                </div>
-                <div class="cart-order__sum">
-                  <span>К оплате</span>
-                  <span class="_value">
-                    28 000 ₽
-                  </span>
-                </div>
-                <div class="cart-order__btn btn">
-                  оформить заказ
-                </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
               </div>
-            </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+            <a href="" class="news-item">
+              <div class="news-item__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+              <div class="news-item__text">
+                <div class="news-item__text-date">02.12.2021</div>
+                <div class="news-item__text-title">Весь декабрь с каждым "жирафом" SCHTAER 3000F3 абразивные круги
+                  SCHTAER
+                  GRIPPaper в подарок!</div>
+              </div>
+            </a>
+          </div>
+          <div class="news-bottom">
+            <a href="" class="news-bottom__btn">ПОКАЗАТЬ ЕЩЁ</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+
+      @@include('components/modals/_sort-articles.html')
+      @@include('components/modals/_filter-articles.html')
+
+      @@include('components/_breadcrumbs.html')
+
+      <div class="spares-top ">
+        <div class="container">
+          <div class="spares-top__body">
+            <h1 class="spares-top__title">
+              ПОЗДРАВЛЯЕМ С ДНЁМ ТРУДА!
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="article article_news">
+        <div class="container">
+          <div class="article-body">
+            <div class="article-col">
+              <div class="article-date">
+                02.12.2021
+              </div>
+              <h3>
+                Заголовок h3
+              </h3>
+              <p>
+                Пусть работа будет только в радость и приносит хорошие и достойные доходы. Желаем много жизненной
+                энергии, лёгких трудовых дней и приятного отдыха в кругу друзей и родных!
+              </p>
+              <h3>
+                Период выходных составит:
+              </h3>
+              <ul>
+                <li>
+                  4 дня с 30.04 по 03.05.2021г.
+                </li>
+                <li>
+                  4 дня с 07.05 по 10.05.2021г.
+                </li>
+              </ul>
+            </div>
+            <div class="article-col">
+              <div class="article-date _mobile">
+                02.12.2021
+              </div>
+              <div class="article-col__img">
+                <img src="./img/news/img.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="article-bottom">
+            <div class="article-bottom__btn _prev">
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 3L8 12L17 21" stroke="#919191" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              ПРЕДЫДУЩАЯ НОВОСТЬ
+            </div>
+            <div class="article-bottom__btn _back">
+              К СПИСКУ <span>НОВОСТЕЙ</span>
+            </div>
+            <div class="article-bottom__btn _next">
+              СЛЕДУЮЩАЯ НОВОСТЬ
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 3L8 12L17 21" stroke="#919191" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
