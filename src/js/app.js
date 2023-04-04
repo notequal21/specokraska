@@ -32,3 +32,4 @@ functions.filterRangeSlider();
 functions.tabsCard();
 functions.searchResult();
 functions.cartClose();
+functions.profileListClose();

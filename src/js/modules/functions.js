@@ -1534,3 +1534,26 @@ export const cartClose = () => {
     });
   }
 };
+
+export const profileListClose = () => {
+  if (
+    window.innerWidth < 992 &&
+    document.querySelector('._profile-item__close')
+  ) {
+    const itemsList = document.querySelectorAll('.profile-list__item');
+    const closeBtns = document.querySelectorAll('._profile-item__close');
+
+    itemsList.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        console.log(e.target);
+        if (e.target == item.querySelector('._profile-item__close')) {
+          if (item.classList.contains('_close')) {
+            item.classList.remove('_close');
+          } else {
+            item.classList.add('_close');
+          }
+        }
+      });
+    });
+  }
+};

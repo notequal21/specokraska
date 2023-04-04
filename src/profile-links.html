@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+
+      @@include('components/_breadcrumbs.html')
+
+      <div class="spares-top ">
+        <div class="container">
+          <div class="spares-top__body">
+            <h1 class="spares-top__title">
+              Рассылки
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="container">
+          <div class="profile-body">
+            <div class="profile-col">
+              <div class="profile-pages">
+                <a href="./profile.html" class="profile-pages__item">Личные данные</a>
+                <a href="./profile-history.html" class="profile-pages__item">История</a>
+                <a href="./profile-list.html" class="profile-pages__item">Профили</a>
+                <a href="./profile-links.html" class="profile-pages__item _active">Рассылки</a>
+              </div>
+
+              <div class="profile-con">
+                <div class="profile-personal">
+                  <div class="profile-personal__title _big">
+                    Контактное лицо
+                  </div>
+
+                  <div class="profile-personal__title">
+                    Изменить пароль
+                  </div>
+
+                  <input type="text" class="profile-personal__input" placeholder="ivan@mail.ru">
+
+                  <div class="profile-personal__title">
+                    Выберите типы подписок, интересных вам:
+                  </div>
+
+                  <div class="profile-personal__checks">
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Новинки каталога
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Новинки магазина
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Акции
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Изменение статуса заказов
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Новые статьи
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Новости компании
+                    </label>
+                    <label class="profile-personal__check">
+                      <input type="checkbox">
+                      <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.75 7L5.25 10.5L12.25 3.5" stroke="#FAA61A" stroke-width="1.75"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      Новые видео на youtube канале
+                    </label>
+                  </div>
+
+                  <div class="profile-personal__input-submit btn">
+                    Сохранить изменения
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-col">
+              <div class="profile-cart">
+                <div class="profile-cart__title">Сейчас в корзине</div>
+                <div class="profile-cart__content">
+                  <div class="profile-cart__content-item">
+                    <span>Товаров</span>
+                    <span>3</span>
+                  </div>
+                  <div class="profile-cart__content-item">
+                    <span>На сумму</span>
+                    <span>316 000 ₽</span>
+                  </div>
+                </div>
+                <div class="profile-cart__btns">
+                  <a href="" class="profile-cart__btns-item btn btn_gray">
+                    перейти в корзину
+                  </a>
+                  <a href="" class="profile-cart__btns-item btn">
+                    оформить заказ
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
