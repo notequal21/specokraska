@@ -1522,6 +1522,138 @@ p._sm {
   margin: 8px 0 0;
 }
 
+.modal._modal-application label textarea {
+  width: 100%;
+  height: 72px;
+  resize: none;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 14px 16px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal._modal-application label textarea::-moz-placeholder {
+  color: #919191;
+}
+
+.modal._modal-application label textarea:-ms-input-placeholder {
+  color: #919191;
+}
+
+.modal._modal-application label textarea::placeholder {
+  color: #919191;
+}
+
+.modal._modal-application .modal-body__form-captcha {
+  margin: 24px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal._modal-application .modal-body__form-file {
+  margin: 24px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #faa61a;
+}
+
+.modal._modal-application .modal-body__form-file svg {
+  margin: 0 8px 0 0;
+}
+
+.modal._modal-application .modal-body {
+  height: 100%;
+  overflow: auto;
+}
+
+.modal._modal-application .modal-body__title br {
+  display: none;
+}
+
+.modal._modal-application .itc-select {
+  margin: 24px 0 0;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 50px;
+}
+
+.modal._modal-application .itc-select button {
+  margin: 0;
+}
+
+.modal._modal-application .itc-select__toggle {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 1;
+  padding: 0 30px 0 14px;
+}
+
+.modal._modal-application .itc-select__toggle::after {
+  top: 18px;
+  background-image: url("../img/icons/arrow-order.svg");
+}
+
+.modal._modal-application .itc-select__dropdown {
+  top: 100%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 20px 24px -4px rgba(137, 142, 156, 0.25), 0px 8px 8px -4px rgba(148, 148, 148, 0.2);
+  border-radius: 5px;
+}
+
+.modal._modal-application .itc-select__options {
+  padding: 16px 0;
+}
+
+.modal._modal-application .itc-select__option {
+  padding: 4px 16px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+  transition: all 0.3s ease;
+}
+
+.modal._modal-application .itc-select__option a {
+  color: #231f20;
+}
+
+.modal._modal-application .itc-select__option:not(:first-child) {
+  margin: 8px 0 0;
+}
+
+.modal._modal-application .itc-select__option.itc-select__option_selected {
+  background-color: transparent;
+  color: #faa61a;
+}
+
+.modal._modal-application .itc-select__option.itc-select__option_selected:hover {
+  text-decoration: none;
+}
+
+.modal._modal-application .itc-select__option:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.modal._modal-application .itc-select_show .itc-select__dropdown {
+  max-height: 250px;
+  overflow: auto;
+}
+
 .modal__bg {
   position: absolute;
   z-index: 1;
@@ -3248,6 +3380,10 @@ p._sm {
   margin: 0;
 }
 
+._spares-items__item-count input[type=number] {
+  -moz-appearance: textfield;
+}
+
 ._spares-items__item-sum {
   margin: 0 0 0 64px;
   font-size: 14px;
@@ -3362,7 +3498,15 @@ p._sm {
   border-left: 1px solid #d9d9d9;
 }
 
-._spares-items__page input {
+._spares-items__page span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+._spares-items__page input,
+._spares-items__page span {
   width: 52px;
   height: 100%;
   font-weight: 600;
@@ -3374,9 +3518,16 @@ p._sm {
 }
 
 ._spares-items__page input::-webkit-outer-spin-button,
-._spares-items__page input::-webkit-inner-spin-button {
+._spares-items__page input::-webkit-inner-spin-button,
+._spares-items__page span::-webkit-outer-spin-button,
+._spares-items__page span::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+._spares-items__page input[type=number],
+._spares-items__page span[type=number] {
+  -moz-appearance: textfield;
 }
 
 .catalog {
@@ -3604,6 +3755,10 @@ p._sm {
 .catalog-filter__fromto input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.catalog-filter__fromto input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .catalog-filter__fromto input:not(:first-child) {
@@ -6281,6 +6436,469 @@ p._sm {
   margin: 0 0 0 16px;
 }
 
+.contacts__title {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts__map {
+  margin: 24px 0 0;
+  height: 330px;
+  background: #e3e3e3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.contacts__map .map-circle-placemark {
+  display: none !important;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-panel {
+  margin: 24px 0 0;
+  padding: 16px;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.contacts-panel__col {
+  flex: 0 0 calc(33.333% - 16px);
+}
+
+.contacts-panel__col:not(:first-child) {
+  margin: 0 0 0 24px;
+}
+
+.contacts-panel__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-panel__item:not(:first-child) {
+  margin: 16px 0 0;
+}
+
+.contacts-panel__item._sub {
+  margin: 4px 0 0;
+}
+
+.contacts-panel__item-ico {
+  width: 24px;
+  height: 24px;
+}
+
+.contacts-panel__item-text {
+  margin: 0 0 0 8px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-panel__item-text a {
+  color: #faa61a;
+}
+
+.contacts-panel__text {
+  margin: 8px 0 0;
+  padding: 0 0 0 32px;
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #231f20;
+}
+
+.contacts-cards {
+  margin: 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-cards__item {
+  flex: 0 0 calc(33.333% - 16px);
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.contacts-cards__item:not(:first-child) {
+  margin: 24px 0 0 24px;
+}
+
+.contacts-cards__item:nth-child(3n+1) {
+  margin: 24px 0 0;
+}
+
+.contacts-cards__item:nth-child(1) {
+  margin: 0;
+}
+
+.contacts-cards__item:nth-child(2),
+.contacts-cards__item:nth-child(3) {
+  margin: 0 0 0 24px;
+}
+
+.contacts-cards__item-title {
+  display: block;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-cards__item-desc {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 14px;
+  line-height: 18px;
+  color: #919191;
+}
+
+.contacts-cards__item-link {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-cards__item-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-cards__item-time {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-text {
+  margin: 24px 0 0;
+  max-width: 700px;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-requisites {
+  margin: 24px 0 0;
+}
+
+.contacts-requisites__title {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #231f20;
+}
+
+.contacts-requisites__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-requisites__item:not(:first-child) {
+  margin: 8px 0 0;
+}
+
+.contacts-requisites__item:nth-child(2) {
+  margin: 16px 0 0;
+}
+
+.contacts-requisites__item-title {
+  flex: 0 0 170px;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #919191;
+}
+
+.contacts-requisites__item-value {
+  display: flex;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-requisites__item-value::before {
+  content: "";
+  display: block;
+  width: 32px;
+  margin: 0 16px 5px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.contacts-country {
+  margin: 24px 0 0;
+}
+
+.contacts-country:not(._first) .contacts-country__title {
+  border-top: 1px solid #d9d9d9;
+  padding: 24px 0 0;
+}
+
+.contacts-country__title {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #231f20;
+}
+
+.contacts-country__item {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 8px;
+}
+
+.contacts-country__item-ico {
+  width: 24px;
+  height: 24px;
+}
+
+.contacts-country__item-ico img {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-country__item-text {
+  margin: 0 0 0 8px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-row {
+  margin: 8px 0 0;
+  display: flex;
+}
+
+.contacts-row__item {
+  cursor: pointer;
+  flex: 0 0 calc(33.333% - 16px);
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.contacts-row__item:hover {
+  box-shadow: 0px 20px 24px -4px rgba(137, 142, 156, 0.25), 0px 8px 8px -4px rgba(148, 148, 148, 0.2);
+}
+
+.contacts-row__item:hover .contacts-row__item-title,
+.contacts-row__item:hover .contacts-row__item-btn {
+  color: #faa61a;
+  border-color: #faa61a;
+}
+
+.contacts-row__item:not(:first-child) {
+  margin: 0 0 0 24px;
+}
+
+.contacts-row__item-title {
+  display: block;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+  transition: all 0.3s ease;
+}
+
+.contacts-row__item-desc {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-row__item-email {
+  display: block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-row__item-email:hover {
+  text-decoration: underline;
+}
+
+.contacts-row__item-btn {
+  display: inline-block;
+  margin: 8px 0 0;
+  font-family: "Futura PT";
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+  border-bottom: 1px dashed #231f20;
+  transition: all 0.3s ease;
+}
+
+.contacts-banner {
+  margin: 24px 0 0;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.contacts-banner__leave {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-banner__leave-ico {
+  width: 32px;
+  height: 32px;
+}
+
+.contacts-banner__leave-ico img {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-banner__leave-text {
+  margin: 0 0 0 16px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-banner__btn {
+  margin: 0 10px;
+}
+
+.contacts-banner__link {
+  display: flex;
+  align-items: center;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+}
+
+.contacts-banner__link:last-child {
+  margin: 0 0 0 10px;
+}
+
+.contacts-banner__link:hover {
+  text-decoration: underline;
+}
+
+.contacts-banner__link img {
+  margin: 0 8px 0 0;
+}
+
+.catalog.catalog_contacts .container {
+  padding: 0 24px;
+}
+
+.catalog.catalog_contacts .itc-select {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 50px;
+}
+
+.catalog.catalog_contacts .itc-select__toggle {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 30px 0 14px;
+}
+
+.catalog.catalog_contacts .itc-select__toggle::after {
+  top: 18px;
+  background-image: url("../img/icons/arrow-order.svg");
+}
+
+.catalog.catalog_contacts .itc-select__dropdown {
+  top: 100%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 20px 24px -4px rgba(137, 142, 156, 0.25), 0px 8px 8px -4px rgba(148, 148, 148, 0.2);
+  border-radius: 5px;
+}
+
+.catalog.catalog_contacts .itc-select__options {
+  padding: 16px 0;
+}
+
+.catalog.catalog_contacts .itc-select__option {
+  padding: 4px 16px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231f20;
+  transition: all 0.3s ease;
+}
+
+.catalog.catalog_contacts .itc-select__option a {
+  color: #231f20;
+}
+
+.catalog.catalog_contacts .itc-select__option:not(:first-child) {
+  margin: 8px 0 0;
+}
+
+.catalog.catalog_contacts .itc-select__option.itc-select__option_selected {
+  background-color: transparent;
+  color: #faa61a;
+}
+
+.catalog.catalog_contacts .itc-select__option.itc-select__option_selected:hover {
+  text-decoration: none;
+}
+
+.catalog.catalog_contacts .itc-select__option:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.catalog.catalog_contacts .itc-select_show .itc-select__dropdown {
+  max-height: 250px;
+  overflow: auto;
+}
+
 /**
  * Swiper 9.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -6970,6 +7588,10 @@ body._lock {
   .cart-item__row {
     display: none;
   }
+
+  .catalog.catalog_contacts .itc-select {
+    display: none;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -6985,6 +7607,10 @@ body._lock {
 
   .popular-body__item img {
     width: 200px;
+  }
+
+  .contacts-banner {
+    padding: 24px;
   }
 }
 
@@ -7248,6 +7874,30 @@ body._lock {
   .profile-pages__item {
     width: 120px;
   }
+
+  .contacts-row {
+    flex-wrap: wrap;
+  }
+
+  .contacts-row__item {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .contacts-row__item:not(:first-child) {
+    margin: 16px 0 0 16px;
+  }
+
+  .contacts-row__item:nth-child(2) {
+    margin: 0 0 0 16px;
+  }
+
+  .contacts-row__item:nth-child(2n+1) {
+    margin: 16px 0 0;
+  }
+
+  .contacts-row__item:nth-child(1) {
+    margin: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -7321,6 +7971,16 @@ body._lock {
 
   .modal._modal-buy .modal-body {
     width: 100%;
+  }
+
+  .modal._modal-application .modal-body {
+    overflow: unset;
+  }
+
+  .modal._modal-application .modal-body__con {
+    height: 100%;
+    overflow: auto;
+    padding: 0 0 50px;
   }
 
   .modal-body {
@@ -8609,6 +9269,144 @@ body._lock {
   .profile-list__btns-item:not(:first-child) {
     margin: 0;
   }
+
+  .contacts__title {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .contacts__map {
+    height: 235px;
+  }
+
+  .contacts-panel__item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-panel__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-cards__item {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .contacts-cards__item:not(:first-child) {
+    margin: 16px 0 0 16px;
+  }
+
+  .contacts-cards__item:nth-child(2n+1) {
+    margin: 16px 0 0;
+  }
+
+  .contacts-cards__item:nth-child(3n+1) {
+    margin: 16px 0 0 16px;
+  }
+
+  .contacts-cards__item:nth-child(1) {
+    margin: 0;
+  }
+
+  .contacts-cards__item:nth-child(2) {
+    margin: 0 0 0 16px;
+  }
+
+  .contacts-cards__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-cards__item-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-cards__item-time {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-requisites__title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .contacts-requisites__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-requisites__item-value {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-country {
+    margin: 16px 0 0;
+  }
+
+  .contacts-country:not(._first) .contacts-country__title {
+    padding: 16px 0 0;
+  }
+
+  .contacts-country__title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .contacts-country__item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-row__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-row__item-desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-row__item-email {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-banner__leave-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-banner__btn {
+    font-size: 13px;
+    line-height: 17px;
+    white-space: nowrap;
+  }
+
+  .contacts-banner__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .catalog.catalog_contacts {
+    margin: 16px 0 60px;
+  }
+
+  .catalog.catalog_contacts .catalog-col:nth-child(1) {
+    display: block;
+  }
+
+  .catalog.catalog_contacts .catalog-col:nth-child(2) {
+    margin: 40px 0 0;
+  }
+
+  .catalog.catalog_contacts .catalog-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -8838,6 +9636,14 @@ body._lock {
   .modal._modal-filter ._modal-filter__bottom-btns ._show {
     flex: 1 1 183px;
     margin: 0 0 0 8px;
+  }
+
+  .modal._modal-application .modal-body__title br {
+    display: block;
+  }
+
+  .modal._modal-application .modal-body__con {
+    padding: 40px 0 100px;
   }
 
   .modal-body {
@@ -9521,6 +10327,85 @@ body._lock {
   .profile-list__btns-item svg {
     width: 100%;
     height: 100%;
+  }
+
+  .contacts-panel {
+    flex-wrap: wrap;
+  }
+
+  .contacts-panel__col {
+    flex: 1 1 100%;
+  }
+
+  .contacts-panel__col:not(:first-child) {
+    margin: 16px 0 0;
+  }
+
+  .contacts-cards__item {
+    flex: 1 1 100%;
+  }
+
+  .contacts-cards__item:not(:first-child) {
+    margin: 24px 0 0;
+  }
+
+  .contacts-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts-requisites__item {
+    flex-wrap: wrap;
+  }
+
+  .contacts-requisites__item-title {
+    flex: 1 1 100%;
+  }
+
+  .contacts-requisites__item-value {
+    margin: 4px 0 0;
+  }
+
+  .contacts-requisites__item-value::before {
+    display: none;
+  }
+
+  .contacts-row__item {
+    flex: 1 1 100%;
+  }
+
+  .contacts-row__item:not(:first-child) {
+    margin: 16px 0 0 !important;
+  }
+
+  .contacts-banner {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .contacts-banner__btn {
+    width: 100%;
+    margin: 16px 0 0;
+  }
+
+  .contacts-banner__link {
+    margin: 16px 0 0;
+  }
+
+  .contacts-banner__link:last-child {
+    margin: 16px 0 0;
+  }
+
+  .catalog.catalog_contacts {
+    margin: 16px 0 40px;
+  }
+
+  .catalog.catalog_contacts .container {
+    padding: 0 16px;
+  }
+
+  .catalog.catalog_contacts .catalog-col:nth-child(2) {
+    margin: 32px 0 0;
   }
 
   .container {

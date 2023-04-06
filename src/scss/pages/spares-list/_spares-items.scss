@@ -279,6 +279,9 @@
           -webkit-appearance: none;
           margin: 0;
         }
+        &[type='number'] {
+          -moz-appearance: textfield;
+        }
       }
     }
 
@@ -448,7 +451,15 @@
       }
     }
 
-    input {
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    input,
+    span {
       width: 52px;
       height: 100%;
 
@@ -463,6 +474,9 @@
       &::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
+      }
+      &[type='number'] {
+        -moz-appearance: textfield;
       }
     }
   }

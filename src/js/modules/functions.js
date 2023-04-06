@@ -427,6 +427,7 @@ export const serachSelect = () => {
 export const orderSelect = () => {
   if (document.querySelector('#select-2')) {
     const select2 = new ItcCustomSelect('#select-2');
+    const select3 = new ItcCustomSelect('#select-3');
   }
 };
 
@@ -531,6 +532,66 @@ export const modalCall = () => {
     const modal = document.querySelector('._modal-call');
     const modalBg = document.querySelector('._modal-call__bg');
     const closeBtn = document.querySelector('._modal-call__close');
+    const body = document.querySelector('body');
+    const content = document.querySelectorAll('.container');
+
+    let toggleModal = (e) => {
+      e.preventDefault();
+
+      let div = document.createElement('div');
+      div.style.overflowY = 'scroll';
+      div.style.width = '50px';
+      div.style.height = '50px';
+      document.body.append(div);
+      let scrollWidth = div.offsetWidth - div.clientWidth;
+
+      div.remove();
+
+      if (modal.classList.contains('_active')) {
+        modal.classList.remove('_active');
+        body.classList.remove('_lock');
+        if (window.innerWidth > 992) {
+          content.forEach((item) => {
+            if (item.classList.contains('container_lg')) {
+              item.style.maxWidth = `1472px`;
+              item.style.padding = ` 0 24px`;
+            } else {
+              item.style.maxWidth = `1368px`;
+              item.style.padding = ` 0 24px`;
+            }
+          });
+        }
+      } else {
+        modal.classList.add('_active');
+        body.classList.add('_lock');
+        if (window.innerWidth > 992) {
+          content.forEach((item) => {
+            if (item.classList.contains('container_lg')) {
+              item.style.maxWidth = `${1472 + scrollWidth}px`;
+              item.style.padding = ` 0 ${scrollWidth + 24}px 0 24px`;
+            } else {
+              item.style.maxWidth = `${1368 + scrollWidth}px`;
+              item.style.padding = ` 0 ${scrollWidth + 24}px 0 24px`;
+            }
+          });
+        }
+      }
+    };
+
+    openBtn.forEach((item) => {
+      item.addEventListener('click', toggleModal);
+    });
+    modalBg.addEventListener('click', toggleModal);
+    closeBtn.addEventListener('click', toggleModal);
+  }
+};
+
+export const modalApplication = () => {
+  if (document.querySelector('._modal-application')) {
+    const openBtn = document.querySelectorAll('._modal-application-open-btn');
+    const modal = document.querySelector('._modal-application');
+    const modalBg = document.querySelector('._modal-application__bg');
+    const closeBtn = document.querySelector('._modal-application__close');
     const body = document.querySelector('body');
     const content = document.querySelectorAll('.container');
 
@@ -1554,6 +1615,37 @@ export const profileListClose = () => {
           }
         }
       });
+    });
+  }
+};
+
+export const iframeMapStyles = () => {
+  if (document.getElementById('iframeMap')) {
+    window.onload = () => {
+      let iframeName = document.getElementById('iframeMap');
+      let iframeContent = iframeName.contentDocument;
+      iframeContent.body.innerHTML =
+        iframeContent.body.innerHTML +
+        '<style>.map-circle-placemark{display: none;}</style>';
+    };
+  }
+};
+
+export const counterCatalogItem = () => {
+  if (document.querySelector('#catalog-item-01')) {
+    const input = document.querySelector('#catalog-item-01');
+    const inputPlus = document.querySelector('#catalog-item-01-plus');
+    const inputMinus = document.querySelector('#catalog-item-01-minus');
+
+    inputMinus.addEventListener('click', () => {
+      if (input.value <= 0) {
+        return;
+      } else {
+        input.value--;
+      }
+    });
+    inputPlus.addEventListener('click', () => {
+      input.value++;
     });
   }
 };

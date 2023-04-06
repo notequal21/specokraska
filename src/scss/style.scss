@@ -33,6 +33,7 @@
 @import 'pages/articles/article.scss';
 @import 'pages/news/index.scss';
 @import 'pages/profile/index.scss';
+@import 'pages/contacts/index.scss';
 
 @import './node_modules/swiper/swiper.scss';
 @import './node_modules/swiper/modules/pagination/pagination.scss';
@@ -122,3 +123,13 @@ body {
     }
   }
 }
+
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   /* display: none; <- Crashes Chrome on hover */
+//   -webkit-appearance: none;
+//   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+// }
+// input[type='number'] {
+//   -moz-appearance: textfield;
+// }

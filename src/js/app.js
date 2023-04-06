@@ -33,3 +33,6 @@ functions.tabsCard();
 functions.searchResult();
 functions.cartClose();
 functions.profileListClose();
+functions.modalApplication();
+functions.counterCatalogItem();
+// functions.iframeMapStyles();

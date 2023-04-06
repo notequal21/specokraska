@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+
+      @@include('components/_breadcrumbs.html')
+
+      <div class="spares-top ">
+        <div class="container">
+          <div class="spares-top__body">
+            <h1 class="spares-top__title">
+              Контакты
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog catalog_contacts">
+        <div class="container">
+          <div class="catalog-body">
+            <div class="catalog-col">
+              <div class="catalog-menu">
+                <a href="" class="catalog-menu__item _active">
+                  Центральный офис
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item ">
+                  Магазин
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Склад
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Филиалы
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Дилеры
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Дилеры других стран
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Сервисные центры
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="itc-select" id="select-2">
+                <button type="button" class="itc-select__toggle" name="type" value="catalog" data-select="toggle"
+                  data-index="0">Центральный офис</button>
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option itc-select__option_selected" data-select="option" data-value="central"
+                      data-index="0">
+                      <a href="./contacts-central.html">Центральный
+                        офис</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="shop" data-index="1">
+                      <a href="./contacts-shop.html">Магазин</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="stock" data-index="2">
+                      <a href="">Склад</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="branch" data-index="3"><a href="">
+                        Склад
+                      </a></li>
+                    <li class="itc-select__option" data-select="option" data-value="dillers" data-index="4">
+                      <a href="">Дилеры</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="dillers-others" data-index="5">
+                      <a href="./contacts-others.html">
+                        Дилеры других стран
+                      </a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="services" data-index="6">
+                      <a href="./contacts-services.html">Сервисные
+                        центры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-col">
+              <div class="contacts">
+                <div class="contacts__title">центральный офис</div>
+                <div class="contacts__map">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=37.385534%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.57"
+                    frameborder="1" allowfullscreen="true"></iframe>
+                </div>
+                <div class="contacts-panel">
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/address.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        г. Москва, ул. Веткина 2А/7
+                      </div>
+                    </div>
+                    <div class="contacts-panel__item _sub">
+                      <div class="contacts-panel__item-ico">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        <a href="">Как добраться</a>
+                      </div>
+                    </div>
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/phone.svg" alt="">
+                      </div>
+                      <a href="tel:+74951034850" class="contacts-panel__item-text">
+                        +7 (495) 103-48-50
+                      </a>
+                    </div>
+                    <div class="contacts-panel__item _sub">
+                      <div class="contacts-panel__item-ico">
+
+                      </div>
+                      <a href="tel:+74951037475" class="contacts-panel__item-text">
+                        +7 (495) 103-74-75
+                      </a>
+                    </div>
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/mail.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        <a href="mailto:info@specokraska.ru">
+                          Info@specokraska.ru
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/time.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        г. Москва, ул. Веткина 2А/7
+                      </div>
+                    </div>
+                    <div class="contacts-panel__text">
+                      С понедельника по пятницу с 9:00 до 18:00
+                      Выходные дни — суббота и воскресенье
+                    </div>
+                  </div>
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/click.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        Приём заказов через сайт:
+                      </div>
+                    </div>
+                    <div class="contacts-panel__text">
+                      Прием заказов через сайт и по электронной почте осуществляется круглосуточно, без выходных
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-cards">
+                  <div class="contacts-cards__item">
+                    <div class="contacts-cards__item-title">Отдел отгрузки</div>
+                    <div class="contacts-cards__item-desc">
+                      Специалист по строительному и дорожному оборудованию
+                    </div>
+                    <a href="tel:+74951034850" class="contacts-cards__item-link">
+                      +7 (495) 103-48-50
+                    </a>
+                    <a href="mailto:info@specokraska.ru" class="contacts-cards__item-link">
+                      Info@specokraska.ru
+                    </a>
+                    <div class="contacts-cards__item-time">
+                      Пн.-Пт. с 10.00-17.00
+                    </div>
+                  </div>
+                  <div class="contacts-cards__item">
+                    <div class="contacts-cards__item-title">Сервисная служба</div>
+                    <a href="tel:+74951034850" class="contacts-cards__item-link">
+                      +7 (495) 103-48-50
+                    </a>
+                    <a href="mailto:info@specokraska.ru" class="contacts-cards__item-link">
+                      Info@specokraska.ru
+                    </a>
+                    <div class="contacts-cards__item-time">
+                      Пн.-Пт. с 10.00-17.00
+                    </div>
+                  </div>
+                  <div class="contacts-cards__item">
+                    <div class="contacts-cards__item-title">
+                      Александр Николаев
+                    </div>
+                    <div class="contacts-cards__item-desc">
+                      Специалист по строительному и дорожному оборудованию
+                    </div>
+                    <a href="tel:+74951034850" class="contacts-cards__item-link">
+                      +7 (495) 103-48-50
+                    </a>
+                    <a href="mailto:info@specokraska.ru" class="contacts-cards__item-link">
+                      Info@specokraska.ru
+                    </a>
+                  </div>
+                  <div class="contacts-cards__item">
+                    <div class="contacts-cards__item-title">
+                      Андрей Попов
+                    </div>
+                    <div class="contacts-cards__item-desc">
+                      Специалист по строительному и дорожному оборудованию
+                    </div>
+                    <a href="tel:+74951034850" class="contacts-cards__item-link">
+                      +7 (495) 103-48-50
+                    </a>
+                    <a href="mailto:info@specokraska.ru" class="contacts-cards__item-link">
+                      Info@specokraska.ru
+                    </a>
+                  </div>
+                </div>
+                <div class="contacts-text">
+                  Время работы офиса: с понедельника по пятницу с 9:00 до 18:00. Выходные дни — суббота и воскресенье.
+                  Прием заказов через сайт и по электронной почте осуществляется круглосуточно, без выходных.
+                </div>
+                <div class="contacts-requisites">
+                  <div class="contacts-requisites__title">Наши реквизиты</div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Краткое наименование:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      ООО «СПЕЦОКРАСКА»
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Генеральный директор:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      Козырь Андрей Алексеевич
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Юридический адрес:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      г. Москва, проезд 12-й Марьиной Рощи, д. 9, стр. 1, ЭТАЖ 3
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Фактический адрес:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      г. Москва, проезд 12-й Марьиной Рощи, д. 9, стр. 1, ЭТАЖ 3
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Почтовый адрес:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      г. Москва, проезд 12-й Марьиной Рощи, д. 9, стр. 1, ЭТАЖ 3
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Расчетный счет в рублях:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      40702810300000019787
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      Кор. счет:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      30101810200000000700
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      БИК:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      044525700
+                    </div>
+                  </div>
+                  <div class="contacts-requisites__item">
+                    <div class="contacts-requisites__item-title">
+                      ИНН/КПП:
+                    </div>
+                    <div class="contacts-requisites__item-value">
+                      9715254112 / 771501001, АО "РАЙФФАЙЗЕНБАНК", г. Москва
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

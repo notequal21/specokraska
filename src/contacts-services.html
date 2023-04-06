@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+      @@include('components/modals/_appclication.html')
+
+      @@include('components/_breadcrumbs.html')
+
+      <div class="spares-top ">
+        <div class="container">
+          <div class="spares-top__body">
+            <h1 class="spares-top__title">
+              Контакты
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog catalog_contacts">
+        <div class="container">
+          <div class="catalog-body">
+            <div class="catalog-col">
+              <div class="catalog-menu">
+                <a href="" class="catalog-menu__item">
+                  Центральный офис
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Магазин
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Склад
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Филиалы
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Дилеры
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item _active">
+                  Дилеры других стран
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="" class="catalog-menu__item">
+                  Сервисные центры
+
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L10 8L5 13" stroke="#231F20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="itc-select" id="select-2">
+                <button type="button" class="itc-select__toggle" name="type" value="dillers-others" data-select="toggle"
+                  data-index="5">Магазин</button>
+                <div class="itc-select__dropdown">
+                  <ul class="itc-select__options">
+                    <li class="itc-select__option" data-select="option" data-value="central" data-index="0">
+                      <a href="./contacts-central.html">Центральный
+                        офис</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="shop" data-index="1">
+                      <a href="./contacts-shop.html">Магазин</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="stock" data-index="2">
+                      <a href="">Склад</a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="branch" data-index="3"><a href="">
+                        Склад
+                      </a></li>
+                    <li class="itc-select__option" data-select="option" data-value="dillers" data-index="4">
+                      <a href="">Дилеры</a>
+                    </li>
+                    <li class="itc-select__option itc-select__option_selected" data-select="option"
+                      data-value="dillers-others" data-index="5">
+                      <a href="./contacts-others.html">
+                        Дилеры других стран
+                      </a>
+                    </li>
+                    <li class="itc-select__option" data-select="option" data-value="services" data-index="6">
+                      <a href="./contacts-services.html">Сервисные
+                        центры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-col">
+              <div class="contacts">
+                <div class="contacts__title">дилеры других стран</div>
+                <div class="contacts__map">
+                  <iframe id="iframeMap" loading="lazy"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A62b7a70ba12ddab4407fae17df5d8b13fdd0ca665684c1e23a76cd890a5d1b9f&amp;source=constructor"
+                    frameborder="1" allowfullscreen="true"></iframe>
+                </div>
+                <div class="contacts-panel">
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/address.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        г. Москва, ул. Веткина 2А/7
+                      </div>
+                    </div>
+                    <div class="contacts-panel__item _sub">
+                      <div class="contacts-panel__item-ico">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        <a href="">Как добраться</a>
+                      </div>
+                    </div>
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/phone.svg" alt="">
+                      </div>
+                      <a href="tel:+74951034850" class="contacts-panel__item-text">
+                        +7 (495) 103-48-50
+                      </a>
+                    </div>
+                    <div class="contacts-panel__item _sub">
+                      <div class="contacts-panel__item-ico">
+
+                      </div>
+                      <a href="tel:+74951037475" class="contacts-panel__item-text">
+                        +7 (495) 103-74-75
+                      </a>
+                    </div>
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/mail.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        <a href="mailto:info@specokraska.ru">
+                          Info@specokraska.ru
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/time.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        г. Москва, ул. Веткина 2А/7
+                      </div>
+                    </div>
+                    <div class="contacts-panel__text">
+                      С понедельника по пятницу с 9:00 до 18:00
+                      Выходные дни — суббота и воскресенье
+                    </div>
+                  </div>
+                  <div class="contacts-panel__col">
+                    <div class="contacts-panel__item">
+                      <div class="contacts-panel__item-ico">
+                        <img src="./img/icons/contacts/click.svg" alt="">
+                      </div>
+                      <div class="contacts-panel__item-text">
+                        Приём заказов через сайт:
+                      </div>
+                    </div>
+                    <div class="contacts-panel__text">
+                      Прием заказов через сайт и по электронной почте осуществляется круглосуточно, без выходных
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-banner">
+                  <div class="contacts-banner__leave">
+                    <div class="contacts-banner__leave-ico">
+                      <img src="./img/icons/contacts/click-2.svg" alt="">
+                    </div>
+                    <div class="contacts-banner__leave-text">
+                      Оставьте заявку любым <br>
+                      удобным для вас способом
+                    </div>
+                  </div>
+                  <div class="contacts-banner__btn btn _modal-application-open-btn">
+                    оставить заявку
+                  </div>
+                  <a href="mailto:info@specokraska.ru" class="contacts-banner__link">
+                    <img src="./img/icons/contacts/mail.svg" alt="">
+                    Info@specokraska.ru
+                  </a>
+                  <a href="" class="contacts-banner__link">
+                    <img src="./img/icons/contacts/tg.svg" alt="">
+                    @specok_bot
+                  </a>
+                </div>
+                <div class="contacts-country _first">
+                  <div class="contacts-country__title">
+                    Казахстан
+                  </div>
+                  <div class="contacts-country__item">
+                    <div class="contacts-country__item-ico">
+                      <img src="./img/icons/contacts/address.svg" alt="">
+                    </div>
+                    <div class="contacts-country__item-text">
+                      г. Актобе
+                    </div>
+                  </div>
+                  <div class="contacts-row">
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-country">
+                  <div class="contacts-country__item">
+                    <div class="contacts-country__item-ico">
+                      <img src="./img/icons/contacts/address.svg" alt="">
+                    </div>
+                    <div class="contacts-country__item-text">
+                      г. Алматы
+                    </div>
+                  </div>
+                  <div class="contacts-row">
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-country">
+                  <div class="contacts-country__title">
+                    беларусь
+                  </div>
+                  <div class="contacts-country__item">
+                    <div class="contacts-country__item-ico">
+                      <img src="./img/icons/contacts/address.svg" alt="">
+                    </div>
+                    <div class="contacts-country__item-text">
+                      г. Минск
+                    </div>
+                  </div>
+                  <div class="contacts-row">
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-country">
+                  <div class="contacts-country__title">
+                    Таджикистан
+                  </div>
+                  <div class="contacts-country__item">
+                    <div class="contacts-country__item-ico">
+                      <img src="./img/icons/contacts/address.svg" alt="">
+                    </div>
+                    <div class="contacts-country__item-text">
+                      г. Архыз
+                    </div>
+                  </div>
+                  <div class="contacts-row">
+                    <div class="contacts-row__item">
+                      <div class="contacts-row__item-title">Marketdom</div>
+                      <div class="contacts-row__item-desc">
+                        Казахстан, г. Актобе, пр-кт Санкибай Батыра 26Д, ТД "Мерей-2", 1 бутик
+                      </div>
+                      <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
+                        abylay.ketebayev@gmail.com
+                      </a>
+                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
