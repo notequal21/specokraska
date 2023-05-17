@@ -35,4 +35,5 @@ functions.cartClose();
 functions.profileListClose();
 functions.modalApplication();
 functions.counterCatalogItem();
+functions.ellipsisSimilar();
 // functions.iframeMapStyles();

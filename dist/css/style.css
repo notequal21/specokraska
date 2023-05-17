@@ -4450,6 +4450,15 @@ p._sm {
   overflow: hidden;
 }
 
+.card-similar__slider .card-tabs__content-slider .swiper-slide {
+  min-height: 100%;
+  height: auto;
+}
+
+.card-similar__slider .card-tabs__content-slider .swiper-slide .goods-content__item {
+  min-height: 100%;
+}
+
 .cart {
   margin: 48px 0 64px;
   overflow: hidden;

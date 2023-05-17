@@ -3,6 +3,7 @@ import Swiper, { Pagination, Autoplay, Navigation, Thumbs } from 'swiper';
 import JustValidate from 'just-validate';
 import Inputmask from '../../../node_modules/inputmask/dist/inputmask.es6.js';
 import noUiSlider from 'nouislider';
+import Ellipsis from 'ellipsis.js';
 
 export function isWebp() {
   function testWebP(callback) {
@@ -427,6 +428,8 @@ export const serachSelect = () => {
 export const orderSelect = () => {
   if (document.querySelector('#select-2')) {
     const select2 = new ItcCustomSelect('#select-2');
+  }
+  if (document.querySelector('#select-3')) {
     const select3 = new ItcCustomSelect('#select-3');
   }
 };
@@ -1294,6 +1297,7 @@ export const catalogItemTabsSlider = () => {
   const swiper = new Swiper('.card-tabs__content-slider', {
     spaceBetween: 0,
     slidesPerView: 'auto',
+
     breakpoints: {
       992: {
         slidesPerView: 5,
@@ -1647,5 +1651,18 @@ export const counterCatalogItem = () => {
     inputPlus.addEventListener('click', () => {
       input.value++;
     });
+  }
+};
+
+export const ellipsisSimilar = () => {
+  if (document.querySelector('._text-elipsis')) {
+    Ellipsis({
+      ellipsis: '…',
+      responsive: false,
+      className: '._text-elipsis',
+      lines: 3,
+      break_word: true,
+    });
+    // Ellipsis();
   }
 };
