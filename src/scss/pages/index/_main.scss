@@ -201,7 +201,7 @@
       }
 
       &:not(:first-child) {
-        margin: 12px 0 0;
+        margin: 0;
 
         @media (max-width: 991px) {
           margin: 2px 0 0;
@@ -214,7 +214,7 @@
           height: 1px;
           background-color: #ededed;
           position: absolute;
-          top: -6px;
+          top: 0px;
           left: 0;
           @media (max-width: 991px) {
             top: -1px;

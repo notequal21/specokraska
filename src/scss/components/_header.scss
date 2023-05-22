@@ -668,30 +668,7 @@
         }
         span {
         }
-
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   right: 0;
-        //   bottom: 1px;
-        //   display: block;
-        //   height: 1px;
-        //   width: 0;
-        //   border-radius: 20px;
-        //   background-color: #000000;
-        //   transition: all 0.3s ease;
-        // }
       }
-
-      // &:hover {
-      //   span {
-      //     &::after {
-      //       width: 100%;
-      //       left: 0;
-      //       right: auto;
-      //     }
-      //   }
-      // }
     }
   }
 }

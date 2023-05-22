@@ -2360,7 +2360,7 @@ p._sm {
 }
 
 .main-menu__item:not(:first-child) {
-  margin: 12px 0 0;
+  margin: 0;
 }
 
 .main-menu__item:not(:first-child)::before {
@@ -2370,7 +2370,7 @@ p._sm {
   height: 1px;
   background-color: #ededed;
   position: absolute;
-  top: -6px;
+  top: 0px;
   left: 0;
 }
 
