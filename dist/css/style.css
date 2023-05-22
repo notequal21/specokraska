@@ -4433,6 +4433,15 @@ p._sm {
   display: block;
 }
 
+.card-tabs__content .card-tabs__content-slider .swiper-slide {
+  min-height: 100%;
+  height: auto;
+}
+
+.card-tabs__content .card-tabs__content-slider .swiper-slide .goods-content__item {
+  min-height: 100%;
+}
+
 .card-similar {
   margin: 65px 0;
 }

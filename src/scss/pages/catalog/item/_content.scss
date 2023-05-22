@@ -783,6 +783,17 @@
           display: block;
         }
       }
+
+      .card-tabs__content-slider {
+        .swiper-slide {
+          min-height: 100%;
+          height: auto;
+
+          .goods-content__item {
+            min-height: 100%;
+          }
+        }
+      }
     }
   }
 
