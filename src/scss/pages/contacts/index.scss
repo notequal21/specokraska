@@ -1,4 +1,10 @@
 .contacts {
+  scroll-margin-top: 100px;
+
+  @media (max-width: 991px) {
+    scroll-margin-top: 200px;
+  }
+
   &__title {
     font-family: 'Futura PT';
     font-weight: 500;

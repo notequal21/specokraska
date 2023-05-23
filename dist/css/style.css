@@ -6454,6 +6454,10 @@ p._sm {
   margin: 0 0 0 16px;
 }
 
+.contacts {
+  scroll-margin-top: 100px;
+}
+
 .contacts__title {
   font-family: "Futura PT";
   font-weight: 500;
@@ -7552,6 +7556,10 @@ body._lock {
 
 ._sitemap-body__item:hover {
   color: rgb(179, 203, 255);
+}
+
+[class*=copyrights-pane] {
+  display: none !important;
 }
 
 @media (min-width: 961px) {
@@ -9286,6 +9294,10 @@ body._lock {
 
   .profile-list__btns-item:not(:first-child) {
     margin: 0;
+  }
+
+  .contacts {
+    scroll-margin-top: 200px;
   }
 
   .contacts__title {

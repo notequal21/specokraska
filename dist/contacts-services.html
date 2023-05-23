@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230522165053">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230523175759">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>name</title>
 </head>
@@ -1022,7 +1022,7 @@
                       stroke-linejoin="round" />
                   </svg>
                 </a>
-                <a href="" class="catalog-menu__item _active">
+                <a href="" class="catalog-menu__item">
                   Дилеры других стран
 
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1030,7 +1030,7 @@
                       stroke-linejoin="round" />
                   </svg>
                 </a>
-                <a href="" class="catalog-menu__item">
+                <a href="" class="catalog-menu__item _active">
                   Сервисные центры
 
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1077,11 +1077,8 @@
             </div>
             <div class="catalog-col">
               <div class="contacts">
-                <div class="contacts__title">дилеры других стран</div>
-                <div class="contacts__map">
-                  <iframe id="iframeMap" loading="lazy"
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A62b7a70ba12ddab4407fae17df5d8b13fdd0ca665684c1e23a76cd890a5d1b9f&amp;source=constructor"
-                    frameborder="1" allowfullscreen="true"></iframe>
+                <div class="contacts__title">сервисные центры</div>
+                <div id="ymap-services" class="contacts__map">
                 </div>
                 <div class="contacts-panel">
                   <div class="contacts-panel__col">
@@ -1198,7 +1195,8 @@
                       <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
                         abylay.ketebayev@gmail.com
                       </a>
-                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                      <a href="" data-coords="55.74863329546302,37.614213566451715"
+                        class="contacts-row__item-btn ymap-coord-btn">показать на карте</a>
                     </div>
                     <div class="contacts-row__item">
                       <div class="contacts-row__item-title">Marketdom</div>
@@ -1208,7 +1206,8 @@
                       <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
                         abylay.ketebayev@gmail.com
                       </a>
-                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                      <a href="" data-coords="55.74863329546302,37.634213566451715"
+                        class="contacts-row__item-btn">показать на карте</a>
                     </div>
                     <div class="contacts-row__item">
                       <div class="contacts-row__item-title">Marketdom</div>
@@ -1463,8 +1462,11 @@
 </footer>
   </div>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js?_v=20230522165053" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-<script src="js/app.min.js?_v=20230522165053"></script>
+  <head>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20230523175759" type="text/javascript">
+  </script>
+</head>
+<script src="js/app.min.js?_v=20230523175759"></script>
 
 </body>
 

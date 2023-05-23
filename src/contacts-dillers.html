@@ -129,10 +129,7 @@
             <div class="catalog-col">
               <div class="contacts">
                 <div class="contacts__title">дилеры других стран</div>
-                <div class="contacts__map">
-                  <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.385534%2C55.584227&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.57"
-                    frameborder="1" allowfullscreen="true"></iframe>
+                <div id="ymap-dillers" class="contacts__map">
                 </div>
                 <div class="contacts-country _first">
                   <div class="contacts-country__title">
@@ -155,7 +152,9 @@
                       <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
                         abylay.ketebayev@gmail.com
                       </a>
-                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                      <a href="#" data-coords="55.74863329546302,37.614213566451715"
+                        class="contacts-row__item-btn ymap-coord-btn">показать на
+                        карте</a>
                     </div>
                     <div class="contacts-row__item">
                       <div class="contacts-row__item-title">Marketdom</div>
@@ -165,7 +164,8 @@
                       <a href="mailto:abylay.ketebayev@gmail.com" class="contacts-row__item-email">
                         abylay.ketebayev@gmail.com
                       </a>
-                      <a href="" class="contacts-row__item-btn">показать на карте</a>
+                      <a href="" class="contacts-row__item-btn ymap-coord-btn"
+                        data-coords="55.74863329546302,37.634213566451715">показать на карте</a>
                     </div>
                     <div class="contacts-row__item">
                       <div class="contacts-row__item-title">Marketdom</div>

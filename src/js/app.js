@@ -1,4 +1,5 @@
 import * as functions from './modules/functions.js';
+import * as maps from './modules/ymaps.js';
 
 functions.isWebp();
 functions.serachSelect();
@@ -37,3 +38,8 @@ functions.modalApplication();
 functions.counterCatalogItem();
 functions.ellipsisSimilar();
 // functions.iframeMapStyles();
+
+maps.ymapCentral();
+maps.ymapShop();
+maps.ymapDillers();
+maps.ymapServices();
