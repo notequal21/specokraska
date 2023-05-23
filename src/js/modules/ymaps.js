@@ -23,7 +23,7 @@ export const ymapCentral = () => {
         },
         {
           iconLayout: 'default#image',
-          iconImageHref: '../img/icons/placemark.svg',
+          iconImageHref: './img/icons/placemark.svg',
           iconImageSize: [54, 60],
           iconImageOffset: [-26, -52],
         }
@@ -61,7 +61,7 @@ export const ymapShop = () => {
         },
         {
           iconLayout: 'default#image',
-          iconImageHref: '../img/icons/placemark.svg',
+          iconImageHref: './img/icons/placemark.svg',
           iconImageSize: [54, 60],
           iconImageOffset: [-26, -52],
         }
@@ -128,7 +128,7 @@ export const ymapDillers = () => {
           },
           {
             iconLayout: 'default#image',
-            iconImageHref: '../img/icons/placemark.svg',
+            iconImageHref: './img/icons/placemark.svg',
             iconImageSize: [54, 60],
             iconImageOffset: [-26, -52],
           }
@@ -207,7 +207,7 @@ export const ymapServices = () => {
           },
           {
             iconLayout: 'default#image',
-            iconImageHref: '../img/icons/placemark.svg',
+            iconImageHref: './img/icons/placemark.svg',
             iconImageSize: [54, 60],
             iconImageOffset: [-26, -52],
           }
