@@ -111,7 +111,7 @@ export const ymapDillers = () => {
 
       const clusterer = new ymaps.Clusterer({
         preset: 'islands#invertedOrangeClusterIcons',
-        clusterDisableClickZoom: true,
+        clusterDisableClickZoom: false,
       });
 
       ymapDillers.controls.remove('geolocationControl');
@@ -197,7 +197,7 @@ export const ymapServices = () => {
 
       const clusterer = new ymaps.Clusterer({
         preset: 'islands#invertedOrangeClusterIcons',
-        clusterDisableClickZoom: true,
+        clusterDisableClickZoom: false,
       });
 
       ymapDillers.controls.remove('geolocationControl');
