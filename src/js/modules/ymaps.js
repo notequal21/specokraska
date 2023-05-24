@@ -109,6 +109,11 @@ export const ymapDillers = () => {
         zoom: 16,
       });
 
+      const clusterer = new ymaps.Clusterer({
+        preset: 'islands#invertedOrangeClusterIcons',
+        clusterDisableClickZoom: true,
+      });
+
       ymapDillers.controls.remove('geolocationControl');
       ymapDillers.controls.remove('searchControl');
       ymapDillers.controls.remove('trafficControl');
@@ -133,8 +138,10 @@ export const ymapDillers = () => {
             iconImageOffset: [-26, -52],
           }
         );
-        ymapDillers.geoObjects.add(myPlacemark);
+        clusterer.add(myPlacemark);
       });
+
+      ymapDillers.geoObjects.add(clusterer);
 
       // обрабатываем клик на кнопку
       content.addEventListener('click', (e) => {
@@ -188,6 +195,11 @@ export const ymapServices = () => {
         zoom: 16,
       });
 
+      const clusterer = new ymaps.Clusterer({
+        preset: 'islands#invertedOrangeClusterIcons',
+        clusterDisableClickZoom: true,
+      });
+
       ymapDillers.controls.remove('geolocationControl');
       ymapDillers.controls.remove('searchControl');
       ymapDillers.controls.remove('trafficControl');
@@ -212,8 +224,10 @@ export const ymapServices = () => {
             iconImageOffset: [-26, -52],
           }
         );
-        ymapDillers.geoObjects.add(myPlacemark);
+        clusterer.add(myPlacemark);
       });
+
+      ymapDillers.geoObjects.add(clusterer);
 
       // обрабатываем клик на кнопку
       content.addEventListener('click', (e) => {
