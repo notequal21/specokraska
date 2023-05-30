@@ -1,4 +1,5 @@
 import * as functions from './modules/functions.js';
+import * as functions2 from './modules/functions2.js';
 import * as maps from './modules/ymaps.js';
 
 functions.isWebp();
@@ -43,3 +44,5 @@ maps.ymapCentral();
 maps.ymapShop();
 maps.ymapDillers();
 maps.ymapServices();
+
+functions2.sparesExpand();

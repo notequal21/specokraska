@@ -3122,6 +3122,13 @@ p._sm {
   margin: 8px 0 0;
 }
 
+.spares-content__item-links li .spares-expand-btn {
+  cursor: pointer;
+  display: inline;
+  border-bottom: 1px dotted #faa61a;
+  color: #faa61a;
+}
+
 .spares-content__item-links li a {
   font-weight: 500;
   font-size: 16px;
