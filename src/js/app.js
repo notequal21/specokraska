@@ -1,6 +1,7 @@
 import * as functions from './modules/functions.js';
 import * as functions2 from './modules/functions2.js';
 import * as maps from './modules/ymaps.js';
+import * as sliders from './modules/sliders.js';
 
 functions.isWebp();
 functions.serachSelect();
@@ -46,3 +47,5 @@ maps.ymapDillers();
 maps.ymapServices();
 
 functions2.sparesExpand();
+
+sliders.aboutSlider();

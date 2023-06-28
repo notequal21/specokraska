@@ -6928,6 +6928,209 @@ p._sm {
   overflow: auto;
 }
 
+.about {
+  overflow: hidden;
+  margin: 44px 0 50px;
+}
+
+.about-body__label {
+  color: #000;
+  font-size: 24px;
+  font-family: Futura PT;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-body__descr {
+  margin: 12px 0 0;
+  color: #000;
+  font-size: 16px;
+  font-family: Futura PT;
+  font-weight: 450;
+}
+
+.about-body__row:not(:first-child) {
+  margin: 100px 0 0;
+}
+
+.about-body__slider {
+  margin: 44px 0 0;
+  overflow: hidden;
+}
+
+.about-body__slider-card {
+  position: relative;
+  width: 228px !important;
+  height: 290px !important;
+  border: 1px solid #ededed;
+  background: #fff;
+  padding: 16px;
+}
+
+.about-body__slider-name {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  font-size: 16px;
+  font-family: Futura PT;
+}
+
+.about-body__slider-img {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  right: 12px;
+  bottom: 16px;
+}
+
+.about-body__slider-img img {
+  width: 143px;
+  height: 212px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-body__slider-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
+}
+
+.about-body__slider-links a {
+  color: #faa61a;
+  font-size: 16px;
+  font-family: Futura PT;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-body__slider-links a:hover {
+  text-decoration: underline;
+}
+
+.about-body__slider-links a:not(:first-child) {
+  margin: 3px 0 0;
+}
+
+.about-body__advantages {
+  display: flex;
+  justify-content: space-around;
+  margin: 64px 0 0;
+}
+
+.about-body__advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-body__advantages-item ._icon {
+  height: 115px;
+}
+
+.about-body__advantages-item ._icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-body__advantages-item ._name {
+  margin: 16px 0 0;
+  color: #000;
+  font-size: 16px;
+  font-family: Futura PT;
+  text-align: center;
+}
+
+.about-body__text {
+  border-top: 1px solid #ededed;
+  padding: 64px 0 0;
+  margin: 64px 0 0;
+}
+
+.about-body__text p {
+  color: #000;
+  font-size: 16px;
+  font-family: Futura PT;
+}
+
+.about-body__text p:not(:first-child) {
+  margin: 24px 0 0;
+}
+
+.about-body__info {
+  display: flex;
+  margin: 64px 0 0;
+}
+
+.about-body__card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(33.333% - 20px);
+  border: 1px solid #ededed;
+  padding: 32px;
+  height: 338px;
+}
+
+.about-body__card:not(:first-child) {
+  margin: 0 0 0 30px;
+}
+
+.about-body__card-title {
+  color: #231f20;
+  font-size: 24px;
+  font-family: Futura PT;
+  font-weight: 500;
+}
+
+.about-body__card-descr {
+  margin: 22px 0 0;
+  color: #231f20;
+  font-size: 16px;
+  font-family: Futura PT;
+}
+
+.about-body__card-link {
+  margin: auto 0 0;
+  font-size: 24px;
+  font-family: Futura PT;
+  font-weight: 500;
+  color: #faa61a;
+}
+
+.about-body__card-link:hover {
+  text-decoration: underline;
+}
+
+.about-body__bottom {
+  margin: 64px 0 0;
+}
+
+.about-body__bottom-text {
+  color: #231f20;
+  font-size: 16px;
+  font-family: Futura PT;
+}
+
+.about-body__bottom-us {
+  margin: 16px 0 0;
+  color: #231f20;
+  font-size: 16px;
+  font-family: Futura PT;
+}
+
+.about-body__bottom-us a {
+  color: #faa61a;
+}
+
+.about-body__bottom-us a:hover {
+  text-decoration: underline;
+}
+
 /**
  * Swiper 9.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -9444,6 +9647,113 @@ body._lock {
   .catalog.catalog_contacts .catalog-menu {
     display: none;
   }
+
+  .about-body__label {
+    font-size: 15px;
+  }
+
+  .about-body__descr {
+    font-size: 14px;
+  }
+
+  .about-body__row:not(:first-child) {
+    margin: 40px 0 0;
+  }
+
+  .about-body__slider {
+    margin: 30px 0 0;
+  }
+
+  .about-body__slider-card {
+    width: 168px !important;
+    height: 214px !important;
+    padding: 12px;
+  }
+
+  .about-body__slider-name {
+    font-size: 14px;
+  }
+
+  .about-body__slider-img {
+    right: 10px;
+    bottom: 12px;
+  }
+
+  .about-body__slider-img img {
+    width: 95px;
+    height: 140px;
+  }
+
+  .about-body__slider-links {
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .about-body__slider-links a {
+    font-size: 13px;
+  }
+
+  .about-body__slider-links a:not(:first-child) {
+    margin: 2px 0 0;
+  }
+
+  .about-body__advantages {
+    margin: 32px 0 0;
+  }
+
+  .about-body__advantages-item:not(:first-child) {
+    margin: 0 0 0 30px;
+  }
+
+  .about-body__advantages-item ._icon {
+    height: 68px;
+  }
+
+  .about-body__advantages-item ._name {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+
+  .about-body__text {
+    padding: 32px 0 0;
+    margin: 32px 0 0;
+  }
+
+  .about-body__text p {
+    font-size: 14px;
+  }
+
+  .about-body__text p:not(:first-child) {
+    margin: 12px 0 0;
+  }
+
+  .about-body__info {
+    margin: 32px 0 0;
+  }
+
+  .about-body__card {
+    padding: 12px;
+    height: 204px;
+  }
+
+  .about-body__card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .about-body__card-descr {
+    margin: 12px 0 0;
+    font-size: 12px;
+  }
+
+  .about-body__card-link {
+    font-size: 14px;
+    font-weight: 450;
+  }
+
+  .about-body__bottom {
+    margin: 32px 0 0;
+  }
 }
 
 @media (max-width: 960px) {
@@ -10443,6 +10753,55 @@ body._lock {
 
   .catalog.catalog_contacts .catalog-col:nth-child(2) {
     margin: 32px 0 0;
+  }
+
+  .about-body__slider {
+    margin: 20px 0 0;
+  }
+
+  .about-body__advantages {
+    flex-direction: column;
+  }
+
+  .about-body__advantages-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-body__advantages-item:not(:first-child) {
+    margin: 12px 0 0;
+  }
+
+  .about-body__advantages-item ._icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .about-body__advantages-item ._name {
+    margin: 0 0 0 12px;
+    text-align: unset;
+  }
+
+  .about-body__advantages-item ._name br {
+    display: none;
+  }
+
+  .about-body__info {
+    flex-wrap: wrap;
+  }
+
+  .about-body__card {
+    height: auto;
+    flex: 0 0 100%;
+  }
+
+  .about-body__card:not(:first-child) {
+    margin: 16px 0 0;
+  }
+
+  .about-body__card-link {
+    margin: 56px 0 0;
   }
 
   .container {

@@ -1,0 +1,361 @@
+.about {
+  overflow: hidden;
+  margin: 44px 0 50px;
+
+  &-body {
+    &__label {
+      color: #000;
+      font-size: 24px;
+      font-family: Futura PT;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      @media (max-width: 991px) {
+        font-size: 15px;
+      }
+    }
+
+    &__descr {
+      margin: 12px 0 0;
+      color: #000;
+      font-size: 16px;
+      font-family: Futura PT;
+      font-weight: 450;
+
+      @media (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+    &__row {
+      &:not(:first-child) {
+        margin: 100px 0 0;
+
+        @media (max-width: 991px) {
+          margin: 40px 0 0;
+        }
+      }
+    }
+
+    &__slider {
+      margin: 44px 0 0;
+      overflow: hidden;
+
+      @media (max-width: 991px) {
+        margin: 30px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 20px 0 0;
+      }
+
+      &-card {
+        position: relative;
+        width: 228px !important;
+        height: 290px !important;
+        border: 1px solid #ededed;
+        background: #fff;
+        padding: 16px;
+
+        @media (max-width: 991px) {
+          width: 168px !important;
+          height: 214px !important;
+          padding: 12px;
+        }
+      }
+
+      &-name {
+        position: relative;
+        z-index: 1;
+        color: #000;
+        font-size: 16px;
+        font-family: Futura PT;
+
+        @media (max-width: 991px) {
+          font-size: 14px;
+        }
+      }
+
+      &-img {
+        position: absolute;
+        pointer-events: none;
+        z-index: 0;
+        right: 12px;
+        bottom: 16px;
+
+        @media (max-width: 991px) {
+          right: 10px;
+          bottom: 12px;
+        }
+
+        img {
+          width: 143px;
+          height: 212px;
+          object-fit: contain;
+
+          @media (max-width: 991px) {
+            width: 95px;
+            height: 140px;
+          }
+        }
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        z-index: 1;
+
+        @media (max-width: 991px) {
+          left: 12px;
+          bottom: 12px;
+        }
+
+        a {
+          color: #faa61a;
+          font-size: 16px;
+          font-family: Futura PT;
+          font-weight: 500;
+          text-transform: uppercase;
+
+          @media (max-width: 991px) {
+            font-size: 13px;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:not(:first-child) {
+            margin: 3px 0 0;
+
+            @media (max-width: 991px) {
+              margin: 2px 0 0;
+            }
+          }
+        }
+      }
+    }
+
+    &__advantages {
+      display: flex;
+      justify-content: space-around;
+      margin: 64px 0 0;
+
+      @media (max-width: 991px) {
+        margin: 32px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: 991px) {
+          &:not(:first-child) {
+            margin: 0 0 0 30px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          &:not(:first-child) {
+            margin: 12px 0 0;
+          }
+        }
+
+        ._icon {
+          height: 115px;
+
+          @media (max-width: 991px) {
+            height: 68px;
+          }
+
+          @media (max-width: 767px) {
+            width: 46px;
+            height: 46px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        ._name {
+          margin: 16px 0 0;
+          color: #000;
+          font-size: 16px;
+          font-family: Futura PT;
+          text-align: center;
+
+          @media (max-width: 991px) {
+            margin: 10px 0 0;
+            font-size: 14px;
+          }
+
+          @media (max-width: 767px) {
+            margin: 0 0 0 12px;
+            text-align: unset;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__text {
+      border-top: 1px solid #ededed;
+      padding: 64px 0 0;
+      margin: 64px 0 0;
+
+      @media (max-width: 991px) {
+        padding: 32px 0 0;
+        margin: 32px 0 0;
+      }
+
+      p {
+        color: #000;
+        font-size: 16px;
+        font-family: Futura PT;
+
+        @media (max-width: 991px) {
+          font-size: 14px;
+        }
+
+        &:not(:first-child) {
+          margin: 24px 0 0;
+
+          @media (max-width: 991px) {
+            margin: 12px 0 0;
+          }
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      margin: 64px 0 0;
+
+      @media (max-width: 991px) {
+        margin: 32px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 calc(33.333% - 20px);
+      border: 1px solid #ededed;
+      padding: 32px;
+      height: 338px;
+
+      @media (max-width: 991px) {
+        padding: 12px;
+        height: 204px;
+      }
+
+      @media (max-width: 767px) {
+        height: auto;
+        flex: 0 0 100%;
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 30px;
+
+        @media (max-width: 767px) {
+          margin: 16px 0 0;
+        }
+      }
+
+      &-title {
+        color: #231f20;
+        font-size: 24px;
+        font-family: Futura PT;
+        font-weight: 500;
+
+        @media (max-width: 991px) {
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+
+      &-descr {
+        margin: 22px 0 0;
+
+        color: #231f20;
+        font-size: 16px;
+        font-family: Futura PT;
+
+        @media (max-width: 991px) {
+          margin: 12px 0 0;
+          font-size: 12px;
+        }
+      }
+
+      &-link {
+        margin: auto 0 0;
+        font-size: 24px;
+        font-family: Futura PT;
+        font-weight: 500;
+        color: #faa61a;
+
+        @media (max-width: 991px) {
+          font-size: 14px;
+          font-weight: 450;
+        }
+
+        @media (max-width: 767px) {
+          margin: 56px 0 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__bottom {
+      margin: 64px 0 0;
+
+      @media (max-width: 991px) {
+        margin: 32px 0 0;
+      }
+
+      &-text {
+        color: #231f20;
+        font-size: 16px;
+        font-family: Futura PT;
+      }
+
+      &-us {
+        margin: 16px 0 0;
+        color: #231f20;
+        font-size: 16px;
+        font-family: Futura PT;
+
+        a {
+          color: #faa61a;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
