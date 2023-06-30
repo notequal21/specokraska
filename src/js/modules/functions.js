@@ -1255,7 +1255,7 @@ export const catalogItemSlider = () => {
       spaceBetween: 8,
       slidesPerView: 'auto',
       freeMode: true,
-      watchSlidesProgress: true,
+      // watchSlidesProgress: true,
     });
     const swiperBig = new Swiper('.card-content__slider-big', {
       modules: [Thumbs, Navigation],
@@ -1266,9 +1266,9 @@ export const catalogItemSlider = () => {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      thumbs: {
-        swiper: swiperThumbs,
-      },
+      // thumbs: {
+      //   swiper: swiperThumbs,
+      // },
       breakpoints: {
         992: {
           slidesPerView: 1,

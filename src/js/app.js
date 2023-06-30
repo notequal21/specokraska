@@ -2,6 +2,7 @@ import * as functions from './modules/functions.js';
 import * as functions2 from './modules/functions2.js';
 import * as maps from './modules/ymaps.js';
 import * as sliders from './modules/sliders.js';
+import * as fancybox from './modules/fancybox.js';
 
 functions.isWebp();
 functions.serachSelect();
@@ -39,6 +40,7 @@ functions.profileListClose();
 functions.modalApplication();
 functions.counterCatalogItem();
 functions.ellipsisSimilar();
+fancybox.fancyboxCatalogItem();
 // functions.iframeMapStyles();
 
 maps.ymapCentral();
