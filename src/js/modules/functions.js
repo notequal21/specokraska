@@ -1255,7 +1255,13 @@ export const catalogItemSlider = () => {
       spaceBetween: 8,
       slidesPerView: 'auto',
       freeMode: true,
+      slidesPerView: 'auto',
       // watchSlidesProgress: true,
+      breakpoints: {
+        992: {
+          slidesPerView: 14,
+          },
+      },
     });
     const swiperBig = new Swiper('.card-content__slider-big', {
       modules: [Thumbs, Navigation],

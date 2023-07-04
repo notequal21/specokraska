@@ -9420,6 +9420,25 @@ body._lock {
   overflow: hidden;
 }
 
+h1 {
+  font-size: 24px;
+  line-height: 51px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 44px;
+}
+
+.goods-content__item-name {
+  text-transform: initial;
+}
+
+.spares-top__title,
+.about-body__label {
+  text-transform: initial;
+}
+
 .container {
   max-width: 1368px;
   margin: 0 auto;
