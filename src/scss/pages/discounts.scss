@@ -1,0 +1,206 @@
+.discounts {
+  margin: 46px 0 100px;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    margin: 16px 0 60px;
+  }
+
+  &__title {
+    color: #231f20;
+    font-family: Futura PT;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (max-width: 767px) {
+      font-size: 17px;
+    }
+  }
+  &Current {
+    margin: 46px 0 0;
+    overflow: hidden;
+
+    @media (max-width: 991px) {
+      margin: 24px 0 0;
+    }
+
+    @media (max-width: 767px) {
+      margin: 16px 0 0;
+      overflow: visible;
+    }
+
+    &__title {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 20px;
+      background: #f4f4f4;
+
+      color: #3b3b3b;
+      font-family: Futura PT;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      align-self: flex-start;
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+
+      img {
+        width: 30px;
+        flex: 0 0 auto;
+        margin: 0 10px 0 0;
+        object-fit: contain;
+
+        @media (max-width: 991px) {
+          width: 24px;
+        }
+        @media (max-width: 767px) {
+          width: 19px;
+        }
+      }
+    }
+
+    &__slider {
+      margin: 36px 0 0;
+
+      @media (max-width: 991px) {
+        margin: 24px 0 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &Ended {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0 0;
+
+    @media (max-width: 991px) {
+      margin: 80px 0 0;
+    }
+
+    &__content {
+      margin: 36px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 64px 40px;
+
+      @media (max-width: 991px) {
+        gap: 36px 30px;
+      }
+      @media (max-width: 767px) {
+        gap: 24px 10px;
+      }
+    }
+
+    &__item {
+      flex: 0 0 calc(33.333% - 27px);
+
+      @media (max-width: 991px) {
+        flex: 0 0 calc(50% - 15px);
+      }
+      @media (max-width: 767px) {
+        flex: 0 0 calc(50% - 5px);
+      }
+
+      display: flex;
+      flex-direction: column;
+
+      &Img {
+        height: 108px;
+
+        @media (max-width: 991px) {
+          height: 90px;
+        }
+        @media (max-width: 767px) {
+          height: 36px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &Date {
+        align-self: flex-start;
+        margin: 29px 0 0;
+        padding: 6px 10px;
+
+        color: #fff;
+        font-family: Futura PT;
+        font-size: 18px;
+        font-weight: 400;
+        background: #ff4848;
+
+        @media (max-width: 991px) {
+          ont-size: 15px;
+        }
+        @media (max-width: 767px) {
+          margin: 10px 0 0;
+          padding: 3px 4px;
+          font-size: 6px;
+        }
+      }
+      &Title {
+        margin: 16px 0 0;
+        color: #faa61a;
+        font-family: Futura PT;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media (max-width: 991px) {
+          font-size: 20px;
+        }
+        @media (max-width: 767px) {
+          margin: 6px 0 0;
+          font-size: 12px;
+        }
+      }
+      &Descr {
+        margin: 16px 0 0;
+        color: #000;
+        font-family: Futura PT;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0 90px 0 0;
+
+        @media (max-width: 991px) {
+          padding: 0 78px 0 0;
+          margin: 14px 0 0;
+          font-size: 17px;
+        }
+        @media (max-width: 767px) {
+          padding: 0 30px 0 0;
+          margin: 6px 0 0;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  ._spares-items__page {
+    display: inline-flex;
+    margin: 76px 0 0 auto;
+
+    @media (max-width: 767px) {
+      margin: 34px auto 0;
+    }
+  }
+}

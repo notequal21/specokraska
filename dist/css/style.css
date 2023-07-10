@@ -7205,6 +7205,125 @@ p._sm {
   text-decoration: underline;
 }
 
+.discounts {
+  margin: 46px 0 100px;
+  overflow: hidden;
+}
+
+.discounts__title {
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.discountsCurrent {
+  margin: 46px 0 0;
+  overflow: hidden;
+}
+
+.discountsCurrent__title {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  background: #f4f4f4;
+  color: #3b3b3b;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: flex-start;
+}
+
+.discountsCurrent__title img {
+  width: 30px;
+  flex: 0 0 auto;
+  margin: 0 10px 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.discountsCurrent__slider {
+  margin: 36px 0 0;
+}
+
+.discountsCurrent__slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.discountsEnded {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 0 0;
+}
+
+.discountsEnded__content {
+  margin: 36px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 40px;
+}
+
+.discountsEnded__item {
+  flex: 0 0 calc(33.333% - 27px);
+  display: flex;
+  flex-direction: column;
+}
+
+.discountsEnded__itemImg {
+  height: 108px;
+}
+
+.discountsEnded__itemImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discountsEnded__itemDate {
+  align-self: flex-start;
+  margin: 29px 0 0;
+  padding: 6px 10px;
+  color: #fff;
+  font-family: Futura PT;
+  font-size: 18px;
+  font-weight: 400;
+  background: #ff4848;
+}
+
+.discountsEnded__itemTitle {
+  margin: 16px 0 0;
+  color: #faa61a;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.discountsEnded__itemDescr {
+  margin: 16px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 90px 0 0;
+}
+
+.discounts ._spares-items__page {
+  display: inline-flex;
+  margin: 76px 0 0 auto;
+}
+
 /**
  * Swiper 9.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -11504,6 +11623,56 @@ h2 {
   .about-body__bottom {
     margin: 32px 0 0;
   }
+
+  .discounts {
+    margin: 16px 0 60px;
+  }
+
+  .discountsCurrent {
+    margin: 24px 0 0;
+  }
+
+  .discountsCurrent__title {
+    font-size: 16px;
+  }
+
+  .discountsCurrent__title img {
+    width: 24px;
+  }
+
+  .discountsCurrent__slider {
+    margin: 24px 0 0;
+  }
+
+  .discountsEnded {
+    margin: 80px 0 0;
+  }
+
+  .discountsEnded__content {
+    gap: 36px 30px;
+  }
+
+  .discountsEnded__item {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .discountsEnded__itemImg {
+    height: 90px;
+  }
+
+  .discountsEnded__itemDate {
+    ont-size: 15px;
+  }
+
+  .discountsEnded__itemTitle {
+    font-size: 20px;
+  }
+
+  .discountsEnded__itemDescr {
+    padding: 0 78px 0 0;
+    margin: 14px 0 0;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -12556,6 +12725,56 @@ h2 {
 
   .about-body__card-link {
     margin: 56px 0 0;
+  }
+
+  .discounts__title {
+    font-size: 17px;
+  }
+
+  .discountsCurrent {
+    margin: 16px 0 0;
+    overflow: visible;
+  }
+
+  .discountsCurrent__title {
+    font-size: 12px;
+  }
+
+  .discountsCurrent__title img {
+    width: 19px;
+  }
+
+  .discountsEnded__content {
+    gap: 24px 10px;
+  }
+
+  .discountsEnded__item {
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  .discountsEnded__itemImg {
+    height: 36px;
+  }
+
+  .discountsEnded__itemDate {
+    margin: 10px 0 0;
+    padding: 3px 4px;
+    font-size: 6px;
+  }
+
+  .discountsEnded__itemTitle {
+    margin: 6px 0 0;
+    font-size: 12px;
+  }
+
+  .discountsEnded__itemDescr {
+    padding: 0 30px 0 0;
+    margin: 6px 0 0;
+    font-size: 10px;
+  }
+
+  .discounts ._spares-items__page {
+    margin: 34px auto 0;
   }
 
   .container {

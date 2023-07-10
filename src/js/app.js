@@ -51,3 +51,4 @@ maps.ymapServices();
 functions2.sparesExpand();
 
 sliders.aboutSlider();
+sliders.discountSlider();

@@ -1256,11 +1256,10 @@ export const catalogItemSlider = () => {
       slidesPerView: 'auto',
       freeMode: true,
       slidesPerView: 'auto',
-      // watchSlidesProgress: true,
       breakpoints: {
         992: {
           slidesPerView: 14,
-          },
+        },
       },
     });
     const swiperBig = new Swiper('.card-content__slider-big', {
