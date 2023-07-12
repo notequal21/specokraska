@@ -7406,6 +7406,182 @@ p._sm {
   text-decoration: underline;
 }
 
+.photobank {
+  padding: 0 0 300px;
+}
+
+.photobank__title {
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.photobank-body {
+  display: flex;
+  border-top: 1px solid #d9d9d9;
+  margin: 37px 0 0;
+  padding: 50px 0 0;
+}
+
+.photobank-side {
+  flex: 0 0 auto;
+  width: 228px;
+}
+
+.photobank-side__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photobank-side__item:not(:first-child) {
+  margin: 60px 0 0;
+}
+
+.photobank-side__item-title {
+  margin: 16px 0 0;
+  color: #231f20;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.photobank-side__item-descr {
+  margin: 12px 0 0;
+  color: #6d6e70;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.photobank-content {
+  flex: 1 1 auto;
+  margin: 0 0 0 106px;
+}
+
+.photobank-content__toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.photobank-content__toolbar-clear {
+  margin: 0 0 0 30px;
+  color: #919191;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.photobank-content__toolbar-selected {
+  margin: 0 0 0 auto;
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.photobank-content__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 0;
+  gap: 60px 30px;
+}
+
+.photobank-content__item {
+  flex: 0 0 calc(25% - 22.5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photobank-content__item-name {
+  margin: 16px 0 0;
+  color: #231f20;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.photobank-content__item-select {
+  margin: 16px 0 0;
+}
+
+.photobank-content__item-select input {
+  display: none;
+}
+
+.photobank-content__item-select input:checked + span {
+  border-color: #faa61a;
+}
+
+.photobank-content__item-select input:checked + span img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.photobank-content__item-select span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 3px solid #d4d4d4;
+  transition: all 0.3s ease;
+}
+
+.photobank-content__item-select span img {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.photobank-content__history-title {
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.photobank-content__history-content {
+  margin: 32px 0 0;
+}
+
+.photobank-content__history-item {
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0;
+}
+
+.photobank-content__history-item:not(:first-child) {
+  border-top: 1px solid #d9d9d9;
+}
+
 /**
  * Swiper 9.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -9765,6 +9941,10 @@ h2 {
   .popular-body__item img {
     width: 260px;
   }
+
+  .photobank-content {
+    margin: 0 0 0 86px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -11784,6 +11964,34 @@ h2 {
     width: 4px;
     height: 4px;
   }
+
+  .photobank-side {
+    width: 144px;
+  }
+
+  .photobank-side__item-title {
+    font-size: 16px;
+  }
+
+  .photobank-side__item-descr {
+    margin: 4px 0 0;
+    font-size: 14px;
+  }
+
+  .photobank-content {
+    margin: 0 0 0 46px;
+  }
+
+  .photobank-content__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photobank-content__item-icon img {
+    width: 100%;
+    height: 48px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -12888,6 +13096,39 @@ h2 {
     margin: 34px auto 0;
   }
 
+  .photobank__title {
+    font-size: 17px;
+  }
+
+  .photobank-body {
+    flex-direction: column;
+    border: none;
+    margin: 32px 0 0;
+    padding: 0;
+  }
+
+  .photobank-side {
+    display: flex;
+    width: auto;
+  }
+
+  .photobank-side__item {
+    width: 144px;
+    flex: 0 0 auto;
+  }
+
+  .photobank-side__item:not(:first-child) {
+    margin: 0 0 0 5px;
+  }
+
+  .photobank-content {
+    margin: 48px 0 0;
+  }
+
+  .photobank-content__toolbar-selected {
+    font-size: 14px;
+  }
+
   .container {
     padding: 0 16px;
   }
@@ -12898,6 +13139,35 @@ h2 {
 
   ._sitemap-body ol li {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 540px) {
+  .photobank-content__toolbar {
+    flex-wrap: wrap;
+  }
+
+  .photobank-content__toolbar-save {
+    font-size: 12px;
+  }
+
+  .photobank-content__toolbar-clear {
+    margin: 0 0 0 auto;
+  }
+
+  .photobank-content__toolbar-selected {
+    margin: 16px 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .photobank-content__items {
+    margin: 40px 0 0;
+    gap: 40px 10px;
+  }
+
+  .photobank-content__item {
+    flex: 0 0 calc(50% - 5px);
   }
 }
 
