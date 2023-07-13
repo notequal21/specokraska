@@ -1654,6 +1654,141 @@ p._sm {
   overflow: auto;
 }
 
+.modal._modal-crm .modal-body {
+  width: 100%;
+  max-width: 860px;
+  padding: 30px;
+  height: auto;
+}
+
+.modal._modal-crm .modal-body__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  text-align: left;
+  font-family: Futura PT;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.modal._modal-crm .modal-body__close {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.modal._modal-crm .modal-body__item {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0;
+  padding: 24px 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.modal._modal-crm .modal-body__item-img {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 88px;
+}
+
+.modal._modal-crm .modal-body__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal._modal-crm .modal-body__item-title {
+  margin: 0 0 0 24px;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.modal._modal-crm .modal-body__contacts {
+  margin: 24px 0 0;
+}
+
+.modal._modal-crm .modal-body__contacts-text {
+  color: #000;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal._modal-crm .modal-body__contacts-fields {
+  display: flex;
+  margin: 24px 0 0;
+}
+
+.modal._modal-crm .modal-body__contacts-field {
+  flex: 0 0 calc(50% - 15px);
+}
+
+.modal._modal-crm .modal-body__contacts-field .just-validate-error-field {
+  border-color: rgb(184, 17, 17);
+}
+
+.modal._modal-crm .modal-body__contacts-field .just-validate-error-label {
+  display: none;
+}
+
+.modal._modal-crm .modal-body__contacts-field input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  padding: 0 16px;
+  font-family: Futura PT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.modal._modal-crm .modal-body__contacts-field input:placeholder {
+  color: #919191;
+}
+
+.modal._modal-crm .modal-body__contacts-field:not(:first-child) {
+  margin: 0 0 0 30px;
+}
+
+.modal._modal-crm .modal-body__contacts-warn {
+  margin: 24px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal._modal-crm .modal-body__contacts-warn a {
+  color: #faa61a;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.modal._modal-crm .modal-body__contacts-btn {
+  margin: 36px 0 0;
+  padding: 16px 50px;
+}
+
 .modal__bg {
   position: absolute;
   z-index: 1;
@@ -7250,6 +7385,10 @@ p._sm {
   margin: 36px 0 0;
 }
 
+.discountsCurrent__slider a {
+  display: block;
+}
+
 .discountsCurrent__slider img {
   width: 100%;
   height: 100%;
@@ -10338,6 +10477,46 @@ h2 {
     padding: 0 0 50px;
   }
 
+  .modal._modal-crm .modal-body {
+    max-width: 630px;
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .modal._modal-crm .modal-body__title {
+    font-size: 19px;
+  }
+
+  .modal._modal-crm .modal-body__close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal._modal-crm .modal-body__close svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal._modal-crm .modal-body__item {
+    margin: 18px 0 0;
+  }
+
+  .modal._modal-crm .modal-body__item-title {
+    font-size: 17px;
+  }
+
+  .modal._modal-crm .modal-body__contacts {
+    margin: 18px 0 0;
+  }
+
+  .modal._modal-crm .modal-body__contacts-text {
+    font-size: 14px;
+  }
+
+  .modal._modal-crm .modal-body__contacts-field input {
+    font-size: 14px;
+  }
+
   .modal-body {
     width: 100%;
     height: 100%;
@@ -12229,6 +12408,47 @@ h2 {
 
   .modal._modal-application .modal-body__con {
     padding: 40px 0 100px;
+  }
+
+  .modal._modal-crm .modal-body {
+    padding: 20px;
+    margin: 0 18px;
+    border-radius: 8px;
+  }
+
+  .modal._modal-crm .modal-body__item {
+    margin: 12px 0 0;
+  }
+
+  .modal._modal-crm .modal-body__item-img {
+    width: 57px;
+    height: 57px;
+  }
+
+  .modal._modal-crm .modal-body__item-title {
+    font-size: 14px;
+  }
+
+  .modal._modal-crm .modal-body__contacts {
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal._modal-crm .modal-body__contacts-fields {
+    flex-wrap: wrap;
+  }
+
+  .modal._modal-crm .modal-body__contacts-field {
+    flex: 1 1 100%;
+  }
+
+  .modal._modal-crm .modal-body__contacts-field:not(:first-child) {
+    margin: 10px 0 0;
+  }
+
+  .modal._modal-crm .modal-body__contacts-btn {
+    margin: 36px auto 0;
   }
 
   .modal-body {

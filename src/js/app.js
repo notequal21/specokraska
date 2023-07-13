@@ -49,6 +49,8 @@ maps.ymapDillers();
 maps.ymapServices();
 
 functions2.sparesExpand();
+functions2.modalCrm();
+functions2.validateModalCrm();
 
 sliders.aboutSlider();
 sliders.discountSlider();
