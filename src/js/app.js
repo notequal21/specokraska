@@ -52,3 +52,5 @@ functions2.sparesExpand();
 
 sliders.aboutSlider();
 sliders.discountSlider();
+
+functions2.bankPhotoSelectCounter();

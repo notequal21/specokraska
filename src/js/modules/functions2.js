@@ -41,3 +41,34 @@ export const sparesExpand = () => {
     });
   }
 };
+
+export const bankPhotoSelectCounter = () => {
+  if (document.querySelector('#bank-photo-selected')) {
+    const selectedSpan = document.querySelector('#bank-photo-selected');
+    const selectedAllSpan = document.querySelector('#bank-photo-selected-all');
+    const items = document.querySelectorAll('.photobank-content__item');
+    let selectedItemsCount = 0;
+
+    const updateSelectedItems = (count) => {
+      let selectedItemsCount = count;
+      selectedSpan.innerText = selectedItemsCount;
+    };
+
+    selectedAllSpan.innerText = items.length;
+    updateSelectedItems(0);
+
+    const toggleSelectItem = () => {
+      const elements = Array.from(items);
+      const inputArr = elements.map(
+        (item) => item.querySelector('input').checked
+      );
+      const checkedArr = inputArr.filter((item) => item === true);
+
+      updateSelectedItems(checkedArr.length);
+    };
+
+    items.forEach((item) => {
+      item.addEventListener('click', toggleSelectItem);
+    });
+  }
+};
