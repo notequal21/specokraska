@@ -7613,6 +7613,7 @@ p._sm {
 }
 
 .photobank-content__toolbar-clear {
+  cursor: pointer;
   margin: 0 0 0 30px;
   color: #919191;
   font-family: Futura PT;

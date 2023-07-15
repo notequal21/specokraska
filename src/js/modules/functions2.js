@@ -47,6 +47,7 @@ export const sparesExpand = () => {
 export const bankPhotoSelectCounter = () => {
   if (document.querySelector('#bank-photo-selected')) {
     const selectedSpan = document.querySelector('#bank-photo-selected');
+    const clearBtn = document.querySelector('#bank-photo-clear-btn');
     const selectedAllSpan = document.querySelector('#bank-photo-selected-all');
     const items = document.querySelectorAll('.photobank-content__item');
     let selectedItemsCount = 0;
@@ -59,6 +60,14 @@ export const bankPhotoSelectCounter = () => {
     selectedAllSpan.innerText = items.length;
     updateSelectedItems(0);
 
+    const clearSelectedItems = () => {
+      updateSelectedItems(0);
+
+      items.forEach((item) => {
+        item.querySelector('input').checked = false;
+      });
+    };
+
     const toggleSelectItem = () => {
       const elements = Array.from(items);
       const inputArr = elements.map(
@@ -68,6 +77,8 @@ export const bankPhotoSelectCounter = () => {
 
       updateSelectedItems(checkedArr.length);
     };
+
+    clearBtn.addEventListener('click', clearSelectedItems);
 
     items.forEach((item) => {
       item.addEventListener('click', toggleSelectItem);
