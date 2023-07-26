@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html')
+
+      @@include('components/modals/_call.html')
+      @@include('components/modals/_login.html')
+      @@include('components/modals/_registration.html')
+      @@include('components/modals/_forgot.html')
+      @@include('components/modals/_yt-modal.html')
+
+      @@include('components/_breadcrumbs.html')
+
+      <div class="notfound">
+        <div class="container">
+          <div class="notfound-body">
+            <div class="notfound-body__img">
+              <img src="./img/404.png" alt="">
+            </div>
+            <div class="notfound-body__content">
+              <div class="notfound-body__content-err">
+                Ошибка 404
+              </div>
+              <div class="notfound-body__content-title">
+                Упс... Такой страницы не существует :(
+              </div>
+              <div class="notfound-body__content-subtitle">
+                Тут нет окрасочного оборудования...
+              </div>
+              <div class="notfound-body__links">
+                <div class="notfound-body__links-title">
+                  Зато вас может заинтересовать:
+                </div>
+                <a href="" class="notfound-body__links-item">Главная</a>
+                <a href="" class="notfound-body__links-item">Каталог</a>
+                <a href="" class="notfound-body__links-item">YouTube канал</a>
+                <a href="" class="notfound-body__links-item">О компании</a>
+                <a href="" class="notfound-body__links-item">Акции</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

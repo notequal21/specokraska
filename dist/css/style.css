@@ -7463,6 +7463,97 @@ p._sm {
   margin: 76px 0 0 auto;
 }
 
+.discount {
+  margin: 44px 0 120px;
+}
+
+.discount .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount__title {
+  margin: 44px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.discount__subtitle {
+  margin: 64px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.discount-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-top__title {
+  color: #231f20;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.discount-top__date {
+  color: #fff;
+  font-family: Futura PT;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px 10px;
+  background: #ff4848;
+}
+
+.discount-img {
+  margin: 44px 0 0;
+}
+
+.discount-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.discount-body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 46px 0 0;
+  gap: 40px;
+}
+
+.discount-body__item {
+  border: 1px solid #d9d9d9 !important;
+  flex: 0 0 calc(25% - 30px);
+}
+
+.discount-body__item .goods-content__item-name a {
+  color: #231f20;
+}
+
+.discount-btn {
+  width: 100%;
+  max-width: 350px;
+  margin: 64px auto 0;
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+}
+
 .delivery h2 {
   color: #231f20;
   font-family: Futura PT;
@@ -10019,6 +10110,92 @@ h2 {
   display: none !important;
 }
 
+.notfound {
+  margin: 24px 0 56px;
+}
+
+.notfound-body {
+  display: flex;
+  align-items: center;
+}
+
+.notfound-body__img {
+  pointer-events: none;
+  width: 536px;
+  margin: 0 0 0 -130px;
+}
+
+.notfound-body__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.notfound-body__content {
+  margin: 0 0 0 48px;
+}
+
+.notfound-body__content-err {
+  color: #bababa;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.notfound-body__content-title {
+  margin: 28px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.notfound-body__content-subtitle {
+  margin: 12px 0 0;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notfound-body__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 75px 0 0;
+}
+
+.notfound-body__links-title {
+  color: #000;
+  font-family: Futura PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 24px;
+}
+
+.notfound-body__links-item {
+  color: #faa61a;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notfound-body__links-item:not(:first-child) {
+  margin: 12px 0 0;
+}
+
 @media (min-width: 961px) {
   .header-top .header-body__logo {
     display: none;
@@ -12070,16 +12247,33 @@ h2 {
     margin: 16px 0 60px;
   }
 
+  .discounts__title {
+    font-size: 17px;
+  }
+
   .discountsCurrent {
     margin: 24px 0 0;
+  }
+
+  .discountsCurrent {
+    margin: 16px 0 0;
+    overflow: visible;
   }
 
   .discountsCurrent__title {
     font-size: 16px;
   }
 
+  .discountsCurrent__title {
+    font-size: 12px;
+  }
+
   .discountsCurrent__title img {
     width: 24px;
+  }
+
+  .discountsCurrent__title img {
+    width: 19px;
   }
 
   .discountsCurrent__slider {
@@ -12094,26 +12288,99 @@ h2 {
     gap: 36px 30px;
   }
 
+  .discountsEnded__content {
+    gap: 24px 10px;
+  }
+
   .discountsEnded__item {
     flex: 0 0 calc(50% - 15px);
+  }
+
+  .discountsEnded__item {
+    flex: 0 0 calc(50% - 5px);
   }
 
   .discountsEnded__itemImg {
     height: 90px;
   }
 
+  .discountsEnded__itemImg {
+    height: 36px;
+  }
+
   .discountsEnded__itemDate {
     ont-size: 15px;
+  }
+
+  .discountsEnded__itemDate {
+    margin: 10px 0 0;
+    padding: 3px 4px;
+    font-size: 6px;
   }
 
   .discountsEnded__itemTitle {
     font-size: 20px;
   }
 
+  .discountsEnded__itemTitle {
+    margin: 6px 0 0;
+    font-size: 12px;
+  }
+
   .discountsEnded__itemDescr {
     padding: 0 78px 0 0;
     margin: 14px 0 0;
     font-size: 17px;
+  }
+
+  .discountsEnded__itemDescr {
+    padding: 0 30px 0 0;
+    margin: 6px 0 0;
+    font-size: 10px;
+  }
+
+  .discounts ._spares-items__page {
+    margin: 34px auto 0;
+  }
+
+  .discount {
+    margin: 16px 0 100px;
+  }
+
+  .discount__title {
+    margin: 24px 0 0;
+    font-size: 15px;
+  }
+
+  .discount__subtitle {
+    margin: 62px 0 0;
+    font-size: 16px;
+  }
+
+  .discount-top__title {
+    font-size: 17px;
+  }
+
+  .discount-top__date {
+    font-size: 14px;
+  }
+
+  .discount-img {
+    margin: 20px 0 0;
+  }
+
+  .discount-body {
+    margin: 24px 0 0;
+    gap: 30px;
+  }
+
+  .discount-body__item {
+    flex: 0 0 calc(25% - 22.5px);
+  }
+
+  .discount-btn {
+    margin: 48px auto 0;
+    font-size: 13px;
   }
 
   .delivery h2 {
@@ -12171,6 +12438,45 @@ h2 {
   .photobank-content__item-icon img {
     width: 100%;
     height: 48px;
+  }
+
+  .notfound {
+    margin: 30px 0;
+  }
+
+  .notfound-body__img {
+    width: 377px;
+    margin: 0 0 0 -100px;
+  }
+
+  .notfound-body__content {
+    margin: 0;
+  }
+
+  .notfound-body__content-err {
+    font-size: 19px;
+  }
+
+  .notfound-body__content-title {
+    margin: 16px 0 0;
+    font-size: 22px;
+  }
+
+  .notfound-body__content-subtitle {
+    font-size: 15px;
+  }
+
+  .notfound-body__links {
+    margin: 44px 0 0;
+  }
+
+  .notfound-body__links-title {
+    font-size: 15px;
+    margin: 0 0 20px;
+  }
+
+  .notfound-body__links-item {
+    font-size: 14px;
   }
 }
 
@@ -13267,54 +13573,28 @@ h2 {
     margin: 56px 0 0;
   }
 
-  .discounts__title {
-    font-size: 17px;
+  .discount__title {
+    margin: 12px 0 0;
   }
 
-  .discountsCurrent {
-    margin: 16px 0 0;
-    overflow: visible;
+  .discount__subtitle {
+    margin: 44px 0 0;
   }
 
-  .discountsCurrent__title {
+  .discount-top__date {
     font-size: 12px;
   }
 
-  .discountsCurrent__title img {
-    width: 19px;
+  .discount-body {
+    gap: 4px;
   }
 
-  .discountsEnded__content {
-    gap: 24px 10px;
+  .discount-body__item {
+    flex: 0 0 calc(50% - 2px);
   }
 
-  .discountsEnded__item {
-    flex: 0 0 calc(50% - 5px);
-  }
-
-  .discountsEnded__itemImg {
-    height: 36px;
-  }
-
-  .discountsEnded__itemDate {
-    margin: 10px 0 0;
-    padding: 3px 4px;
-    font-size: 6px;
-  }
-
-  .discountsEnded__itemTitle {
-    margin: 6px 0 0;
-    font-size: 12px;
-  }
-
-  .discountsEnded__itemDescr {
-    padding: 0 30px 0 0;
-    margin: 6px 0 0;
-    font-size: 10px;
-  }
-
-  .discounts ._spares-items__page {
-    margin: 34px auto 0;
+  .discount-btn {
+    margin: 40px auto 0;
   }
 
   .photobank__title {
@@ -13360,6 +13640,36 @@ h2 {
 
   ._sitemap-body ol li {
     font-size: 22px;
+  }
+
+  .notfound {
+    overflow: hidden;
+    padding: 24px 0 60px;
+    margin: 0;
+  }
+
+  .notfound-body {
+    position: relative;
+  }
+
+  .notfound-body__img {
+    width: 266px;
+    position: absolute;
+    right: -66px;
+    bottom: -90px;
+  }
+
+  .notfound-body__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .notfound-body__content-title {
+    margin: 12px 0 0;
+  }
+
+  .notfound-body__links {
+    margin: 40px 0 0;
   }
 }
 

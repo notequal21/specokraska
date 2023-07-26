@@ -158,3 +158,157 @@ h2 {
 // input[type='number'] {
 //   -moz-appearance: textfield;
 // }
+
+.notfound {
+  margin: 24px 0 56px;
+
+  @media (max-width: 991px) {
+    margin: 30px 0;
+  }
+
+  @media (max-width: 767px) {
+    overflow: hidden;
+    padding: 24px 0 60px;
+    margin: 0;
+  }
+
+  &-body {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      position: relative;
+    }
+
+    &__img {
+      pointer-events: none;
+      width: 536px;
+      margin: 0 0 0 -130px;
+
+      @media (max-width: 991px) {
+        width: 377px;
+        margin: 0 0 0 -100px;
+      }
+
+      @media (max-width: 767px) {
+        width: 266px;
+        position: absolute;
+        right: -66px;
+        bottom: -90px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__content {
+      margin: 0 0 0 48px;
+
+      @media (max-width: 991px) {
+        margin: 0;
+      }
+
+      @media (max-width: 767px) {
+        position: relative;
+        z-index: 1;
+      }
+
+      &-err {
+        color: #bababa;
+        font-family: Futura PT;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media (max-width: 991px) {
+          font-size: 19px;
+        }
+      }
+
+      &-title {
+        margin: 28px 0 0;
+        color: #000;
+        font-family: Futura PT;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+        @media (max-width: 991px) {
+          margin: 16px 0 0;
+          font-size: 22px;
+        }
+
+        @media (max-width: 767px) {
+          margin: 12px 0 0;
+        }
+      }
+
+      &-subtitle {
+        margin: 12px 0 0;
+        color: #000;
+        font-family: Futura PT;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 991px) {
+          font-size: 15px;
+        }
+      }
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 75px 0 0;
+
+      @media (max-width: 991px) {
+        margin: 44px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 40px 0 0;
+      }
+
+      &-title {
+        color: #000;
+        font-family: Futura PT;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 24px;
+
+        @media (max-width: 991px) {
+          font-size: 15px;
+          margin: 0 0 20px;
+        }
+      }
+
+      &-item {
+        color: #faa61a;
+        font-family: Futura PT;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 991px) {
+          font-size: 14px;
+        }
+
+        &:not(:first-child) {
+          margin: 12px 0 0;
+        }
+      }
+    }
+  }
+}
