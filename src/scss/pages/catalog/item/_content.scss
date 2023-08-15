@@ -879,6 +879,7 @@
 
       .card-tabs__content-slider {
         .swiper-slide {
+          width: 240px;
           min-height: 100%;
           height: auto;
 
@@ -892,6 +893,12 @@
 
   &-similar {
     margin: 65px 0;
+
+    .card-similar__slider {
+      .swiper-slide {
+        width: 240px;
+      }
+    }
 
     @media (max-width: 991px) {
       margin: 40px 0;

@@ -4650,6 +4650,7 @@ p._sm {
 }
 
 .card-tabs__content .card-tabs__content-slider .swiper-slide {
+  width: 240px;
   min-height: 100%;
   height: auto;
 }
@@ -4660,6 +4661,10 @@ p._sm {
 
 .card-similar {
   margin: 65px 0;
+}
+
+.card-similar .card-similar__slider .swiper-slide {
+  width: 240px;
 }
 
 .card-similar__title {
