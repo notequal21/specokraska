@@ -2849,6 +2849,7 @@ p._sm {
 
 .goods-content__item-img {
   position: relative;
+  height: 220px;
 }
 
 .goods-content__item-img img {
