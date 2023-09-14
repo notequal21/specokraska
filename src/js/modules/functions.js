@@ -215,19 +215,19 @@ export const tabsOrder = () => {
       validateBeforeSubmitting: true,
     });
     validateCallbackOrder
-      .addField('._input-email', [
-        {
-          rule: 'email',
-          value: true,
-          errorMessage: '',
-        },
+      .addField('._input-name', [
         {
           rule: 'required',
           value: true,
           errorMessage: '',
         },
       ])
-      .addField('._input-name', [
+      .addField('._input-email', [
+        {
+          rule: 'email',
+          value: true,
+          errorMessage: '',
+        },
         {
           rule: 'required',
           value: true,
@@ -249,26 +249,18 @@ export const tabsOrder = () => {
       });
 
     const handleValidate = () => {
-      if (
-        validateCallbackOrder.fields[1].isValid == false ||
-        validateCallbackOrder.fields[1].isValid == undefined
-      ) {
+      console.log(validateCallbackOrder.fields);
+      if (validateCallbackOrder.fields['1']?.isValid == false) {
         validateCallbackOrder.showErrors({
           '._input-name': '',
         });
       }
-      if (
-        validateCallbackOrder.fields[2].isValid == false ||
-        validateCallbackOrder.fields[2].isValid == undefined
-      ) {
+      if (validateCallbackOrder.fields['2'].isValid == false) {
         validateCallbackOrder.showErrors({
           '._input-email': '',
         });
       }
-      if (
-        validateCallbackOrder.fields[3].isValid == false ||
-        validateCallbackOrder.fields[3].isValid == undefined
-      ) {
+      if (validateCallbackOrder.fields['3'].isValid == false) {
         validateCallbackOrder.showErrors({
           '._input-phone': '',
         });
